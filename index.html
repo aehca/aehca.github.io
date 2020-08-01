@@ -18,8 +18,16 @@
     <link rel="stylesheet" href="css/offset-fixed-navbar.css">
     <title>Association for Education and Health in Central America</title>
     <link rel="shortcut icon" href="images/icon.ico"/>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+        </script>
+        
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   </head>
   <body>
+    
     <!-- NAVBAR -->
     <header>
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
@@ -63,21 +71,24 @@
               </a>
               <!-- CHANGE ACCORDING TO WHICH PAGE THIS IS-->
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">About</a>
-                <a class="dropdown-item" href="#">Partnerships</a>
-                <a class="dropdown-item" href="#">Donate</a>
+                <a class="dropdown-item" href="about.html">About</a>
+                <a class="dropdown-item" href="partnerships.html">Partnerships</a>
+                <a class="dropdown-item" href="give.html">Donate</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item text-muted" href="#">Privacy Policy</a>
-                <a class="dropdown-item text-muted" href="#"
+                <a class="dropdown-item text-muted" href="privacy.html">Privacy Policy</a>
+                <a class="dropdown-item text-muted" href="terms.html"
                   >Terms and Conditions</a
                 >
-                <a class="dropdown-item text-muted" href="#">Contact</a>
+                <a class="dropdown-item text-muted" href="contact.html">Contact</a>
               </div>
             </li>
           </ul>
+            <!-- GOOGLE TRANSLATE BUTTON-->
+            <div id="google_translate_element"></div>
+            <!-- END GOOGLE TRANSLATE BUTTON-->
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#"><b>$</b> Give</a>
+              <a class="nav-link" href="give.html"><b>$</b> Give</a>
             </li>
           </ul>
         </div>
@@ -88,14 +99,8 @@
     <main role="main">
         <div class="container-md">
             <!-- DONT HAVE THIS ON THE HOME PAGE-->
-            <div class="breadcrumbs">
-                <nav>
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Products</a></li>
-                        <li class="breadcrumb-item active">Accessories</li>
-                    </ol>
-                </nav>
+            <div class="translate">
+                <div id="google_translate_element"></div>
             </div>
             <div class="jumbotron">
                 <p></p>
@@ -123,14 +128,12 @@
                   <div class="display-4">
                     <img src="images/ipala.jpg" class="img-fluid rounded" alt="Responsive image">
                 </div>
+
                 <p></p>
                 <a class="btn btn-dark float-right" href="news/2.html" role="button">Read more</a>
 
             </div>
-        </div>
-
-        
-          
+        </div>  
     </main>
     <!-- FOOTER -->
     <footer>
