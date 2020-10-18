@@ -60,7 +60,6 @@ layout: default
         </div>
       </div>
       <hr class="my-4">
-
       <h4 class="mt-0">2019 Ipala Guatemala Trip Report</h4>
       <p></p>
       <div class="media">
@@ -93,7 +92,11 @@ layout: default
       <p></p>
       <div class="row">
         <div class="col text-right">
-          <a class="btn btn-info float-right" href="/news/1.html" role="button">Read more</a>
+          {% for post in site.posts %}
+          {% if post.title == "2019 Ipala Guatemala Trip Report" %}
+          <a class="btn btn-info float-right" href="{{ post.url }}" role="button">Read more</a>
+          {% endif %}
+          {% endfor %}
         </div>
       </div>
     </div>
