@@ -13,10 +13,14 @@
             <ul class="navbar-nav mr-auto">
                 {% for item in site.data.navigation %}
                 <li class="nav-item active">
-                    <a class="nav-link {% if item.name == 'Terms' or item.name == 'Privacy' %}text-info 
-                                {% elsif item.name =='Latest Updates' %}text-warning font-weight-bold 
-                                {% else %}text-warning
-                                {% endif %}" href="{{ item.link }}">{{ item.name }}</a>
+                    {% if item.name == 'Terms' or item.name == 'Privacy' %}
+                    <a class="nav-link text-info " href="{{ item.link }}">{{ item.name }}</a>
+                    {% elsif item.name =='Latest Updates' %}
+                    <a class="nav-link text-info text-warning font-weight-bold"
+                        href="{{ item.link }}">{{ item.name }}</a>
+                    {% else %}
+                    <a class="nav-link text-info text-warning" href="{{ item.link }}">{{ item.name }}</a>
+                    {% endif %}
                 </li>
                 {% endfor %}
             </ul>
