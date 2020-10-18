@@ -1,4 +1,4 @@
-# www.eduhealthca.org)
+# www.eduhealthca.org
 
 The website for the non-profit, AECHA Inc.
 
