@@ -52,6 +52,11 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://www.eduhealthca.org/2020/09/18/covid-letter-from-the-ceo.html</loc>
+  <lastmod>2020-10-31T20:55:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://www.eduhealthca.org/partnerships/guatemala/ipala.html</loc>
   <lastmod>2020-10-18T06:55:44+00:00</lastmod>
   <priority>0.64</priority>
@@ -61,6 +66,7 @@
   <lastmod>2020-10-18T06:55:44+00:00</lastmod>
   <priority>0.64</priority>
 </url>
+
 
 
 </urlset>
