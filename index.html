@@ -41,12 +41,17 @@ layout: default
             <img src="/images/covid19-resp.jpg" class="card-img-top" alt="ipala covid response image">
         </div></a>
         <div class="card text-center">
-          <div class="card-body">
-            <h5 class="card-title">Education</h5>
-            <p class="card-text"></p>
-          </div>
-          <img src="/images/education.jpg" class="card-img-top" alt="ipala education image">
-        </div>
+          {% for post in site.posts %}
+          {% if post.title == "Education in Ipala, Guatemala" %}
+          <a href="{{ post.url }}">
+            {% endif %}
+            {% endfor %}
+            <div class="card-body">
+              <h5 class="card-title">Education</h5>
+              <p class="card-text"></p>
+            </div>
+            <img src="/images/education.jpg" class="card-img-top" alt="ipala education image">
+        </div></a>
         <div class="card text-center">
           <div class="card-body">
             <h5 class="card-title">Health</h5>
