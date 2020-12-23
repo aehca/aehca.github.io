@@ -32,9 +32,16 @@ layout: default
             <div class="row">
               <div class="col text-center">
                 <button type="button" class="btn btn-info" data-toggle="modal" data-target="#donateModal">
-                  Donate
+                  Donate via credit card
                 </button>
-
+                <!-- PayPal button -->
+                <form action="https://www.paypal.com/donate" method="post" target="_top">
+                  <input type="hidden" name="hosted_button_id" value="HJEL3VHRUCN3G" />
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0"
+                    name="submit" title="PayPal - The safer, easier way to pay online!"
+                    alt="Donate with PayPal button" />
+                  <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                </form>
                 <!-- Modal -->
                 <div class="modal fade" id="donateModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                   aria-hidden="true">
