@@ -165,19 +165,19 @@ author: billy
                     </div>
                 </div>
             </div>
+            <hr class="my-4">
+            <p class="font-weight-bold">Read another post from our team below.</p>
+            <div class="list-group">
+                {% for post in site.posts %}
+                {% if page.title == post.title %}
+                <a class="list-group-item list-group-item-action active" href="{{ post.url }}">{{ post.title
+                    }}</a>
+                {% else %}
+                <a class="list-group-item list-group-item-action" href="{{ post.url }}">{{ post.title }}</a>
+                {% endif %}
+                {% endfor %}
+            </div>
         </div>
-        <hr class="my-4">
-        <p class="font-weight-bold">Read another post from our team below.</p>
-        <div class="list-group">
-            {% for post in site.posts %}
-            {% if page.title == post.title %}
-            <a class="list-group-item list-group-item-action active" href="{{ post.url }}">{{ post.title
-                }}</a>
-            {% else %}
-            <a class="list-group-item list-group-item-action" href="{{ post.url }}">{{ post.title }}</a>
-            {% endif %}
-            {% endfor %}
-        </div>
-    </div>
+
     </div>
 </main>
