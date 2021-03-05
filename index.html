@@ -53,11 +53,16 @@ layout: default
             <img src="/images/education.jpg" class="card-img-top" alt="ipala education image">
         </div></a>
         <div class="card text-center">
-          <div class="card-body">
-            <h5 class="card-title">Health</h5>
-            <p class="card-text"></p>
-          </div>
-          <img src="/images/health.jpg" class="card-img-top" alt="ipala health image">
+          {% for post in site.posts %}
+          {% if post.title == "Health in Ipala, Guatemala" %}
+          <a href="{{ post.url }}">
+            {% endif %}
+            {% endfor %}
+            <div class="card-body">
+              <h5 class="card-title">Health</h5>
+              <p class="card-text"></p>
+            </div>
+            <img src="/images/health.jpg" class="card-img-top" alt="ipala health image">
         </div>
       </div>
 
