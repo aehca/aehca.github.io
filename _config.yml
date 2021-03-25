@@ -1,0 +1,8 @@
+name: Eduhealthca.org
+url: http://eduhealthca.org
+description: We are an Association of hope, working together with the people of Central America as partners to build a lasting relationship through education while building healthy living conditions. We have great hope that a different future is possible. We hope that by working together that all participants will be transformed personally and help to make the world a better place.
+kramdown:
+  input: GFM
+  auto_ids: true
+  hard_wrap: false
+  syntax_highlighter: rouge
