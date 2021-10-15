@@ -8,6 +8,9 @@
     {{ content }}
     {% include footer.html %}
     {% include endscripts.html %}
+    {% if page.title == "Home" %}
+    {% include videoscript.html %}
+    {% endif %}
 </body>
 
 </html>

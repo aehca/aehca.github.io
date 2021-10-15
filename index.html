@@ -6,28 +6,67 @@ partnerships with communities to build on their specific needs and existing reso
 specific focus during 2020 and 2021."
 ---
 <main role="main">
-  <div class="container-md">
-    <br>
-    <div class="jumbotron">
-      <p></p>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-6 col-md-4">
-            <div class="display-4">
-              <img src="/images/home-logo.png" class="img-fluid float-left" alt="AEHCA Inc. logo">
-            </div>
-          </div>
-          <div class="col-md-8">
-            <br>
-            <h3 class="text-center">Association for Education and Health in Central America Inc.</h3>
+  <!-- Modal -->
+  <div class="modal fade" id="videoModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">AEHCA Project:</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="ratio ratio-16x9">
+            <iframe src="" width="560" height="315" title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
           </div>
         </div>
       </div>
-
+    </div>
+  </div>
+  <!-- end modal-->
+  <div class="container-md">
+    <br>
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="display-4">
+              <img src="/images/aehca_cover.gif" class="img-fluid float-left rounded" alt="AEHCA Inc. logo">
+            </div>
+          </div>
+          <div class="col-md-auto">
+            <div>
+              <h3>2022 Projects</h3>
+            </div>
+            <br>
+            <!-- Button group for triggering modal -->
+            <div class="btn-group-vertical">
+              <button type="button" class="btn btn-primary video-btn" data-bs-toggle="modal"
+                data-tagVideo="https://www.youtube.com/embed/xl7ax4XDKV8" data-bs-target="#videoModal">
+                Covid-19 Relief
+              </button>
+              <br>
+              <button type="button" class="btn btn-primary video-btn" data-bs-toggle="modal"
+                data-tagVideo="https://www.youtube.com/embed/oLMYa4moo54" data-bs-target="#videoModal">
+                Scholarships
+              </button>
+              <br>
+              <button type="button" class="btn btn-primary video-btn" data-bs-toggle="modal"
+                data-tagVideo="https://www.youtube.com/embed/pCcFxBUJse8" data-bs-target="#videoModal">
+                IDEC Building
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
       <hr class="my-4">
       <div class="container">
         <p>AEHCA works to advance education and healthy living conditions throughout Central America.
           Forming partnerships with communities to build on their specific needs and existing resources.
+          Our partners in Ipala, Guatemala have been working with us to identify projects that will
+          provide the most benefits for their community.
         </p>
       </div>
       <div class="card-group">
@@ -82,47 +121,6 @@ specific focus during 2020 and 2021."
           communities.
         </p>
       </div>
-      <!--
-      <hr class="my-4">
-      <h4 class="mt-0">2019 Ipala Guatemala Trip Report</h4>
-      <p></p>
-      <div class="media">
-        <img src="/images/billy-small.png" class="mr-3 rounded" alt="Billy Earles, CEO">
-        <div class="media-body">
-          <h6 class="mt-0">Billy Earles, CEO <small class="text-muted">March 20, 2020</small></h6>
-          <p></p>
-          <p>In July of 2018, our CEO traveled to Ipala and returned with ideas and objectives. After
-            coordinating
-            with
-            all partners involved, it was decided that we would provide funding for projects within the
-            existing
-            project
-            list of the partnerships.</p>
-          <p>Our portion involved purchasing desks for the school at Poza de la Pila, smokeless stoves for
-            schools,
-            and additional books for school shortages. We gathered $2,975 by asking family and friends
-            to donate to
-            this
-            need.</p>
-          <p>In July of 2019, our CEO returned to Ipala and was pleased to see that the money was well
-            spent.
-            The school at Poza de la Pila received 23 right hand desks and 7 left hand desks.</p>
-        </div>
-      </div>
-      <p></p>
-      <div class="display-4">
-        <img src="/images/ipala.jpg" class="img-fluid rounded" alt="ipala, guatemala">
-      </div>
-      <p></p>
-      <div class="row">
-        <div class="col text-right">
-          {% for post in site.posts %}
-          {% if post.title == "2019 Ipala Guatemala Trip Report" %}
-          <a class="btn btn-info float-right" href="{{ post.url }}" role="button">Read more</a>
-          {% endif %}
-          {% endfor %}
-        </div>
-      </div>-->
     </div>
   </div>
 </main>
