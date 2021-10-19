@@ -7,20 +7,17 @@ specific focus during 2020 and 2021."
 ---
 <main role="main">
   <!-- Modal -->
-  <div class="modal fade" id="videoModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="videoModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
+  <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">AEHCA Project:</h5>
+          <h5 class="modal-title" id="videoModalLabel">Project info</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <div class="ratio ratio-16x9">
-            <iframe src="" width="560" height="315" title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
+          <video class="col" controls muted autoplay>
+            <source src="" type="video/mp4">
+          </video>
         </div>
       </div>
     </div>
@@ -44,17 +41,17 @@ specific focus during 2020 and 2021."
             <!-- Button group for triggering modal -->
             <div class="btn-group-vertical">
               <button type="button" class="btn btn-primary video-btn" data-bs-toggle="modal"
-                data-tagVideo="https://www.youtube.com/embed/KC6ZNNpdYnw" data-bs-target="#videoModal">
+                data-tagVideo="/videos/covid-19_food_relief.mp4" data-bs-target="#videoModal">
                 Covid-19 Relief
               </button>
               <br>
               <button type="button" class="btn btn-primary video-btn" data-bs-toggle="modal"
-                data-tagVideo="https://www.youtube.com/embed/GJXJMImwoek" data-bs-target="#videoModal">
+                data-tagVideo="/videos/scholarships.mp4" data-bs-target="#videoModal">
                 Scholarships
               </button>
               <br>
               <button type="button" class="btn btn-primary video-btn" data-bs-toggle="modal"
-                data-tagVideo="https://www.youtube.com/embed/lWdS_sJXKkk" data-bs-target="#videoModal">
+                data-tagVideo="/videos/IDEC_building_project.mp4" data-bs-target="#videoModal">
                 IDEC Building
               </button>
             </div>
