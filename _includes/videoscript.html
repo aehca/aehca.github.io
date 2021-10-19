@@ -8,7 +8,7 @@
             $(theModal).modal('show');
             $(theModal + ' video').attr('src', videoSRCauto);
             $(theModal + ' button.btn-close').click(function () {
-                $(theModal + ' iframe').attr('src', videoSRC);
+                $(theModal + ' video').attr('src', videoSRC);
                 $(theModal).modal('hide');
             });
 
