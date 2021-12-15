@@ -27,11 +27,37 @@ specific focus during 2020 and 2021."
     <br>
     <div class="jumbotron">
       <div class="container">
+        <!-- Can use this as a template for various informational alerts we want to give out.. maybe for new posts that dont need to be main content -->
+        {% assign curMonth = site.time | date: "%m" %}
+        {% if curMonth >= "11" %} <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+          <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+            <path
+              d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+          </symbol>
+        </svg>
+        <div class="alert alert-primary d-flex align-items-center" role="alert">
+          <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
+            <use xlink:href="#info-fill" />
+          </svg>
+          <div>
+            It's almost the end of the year! Click
+
+            {% for post in site.posts %}
+            <!-- TODO: add in the correct post title for the new tax info -->
+            {% if post.title == "x" %}
+            <a href="{{ post.url }}">here</a>
+            {% endif %}
+            {% endfor %}
+            to learn about how donating can help during tax time.
+          </div>
+        </div>
+        {% endif %}
+        <!-- End of informational alerts-->
         <div class="row justify-content-center">
           <div class="col-md-8">
             <div class="display-4">
               <!-- decide on whether to use a gif or video format. video format saves ~75-90% in kb. needed? -->
-              <img src="/images/aehca_cover.gif" class="img-fluid float-left rounded" alt="AEHCA Inc. logo"> 
+              <img src="/images/aehca_cover.gif" class="img-fluid float-left rounded" alt="AEHCA Inc. logo">
               <!--<video autoplay loop muted playsinline class="img-fluid float-left rounded" alt="AEHCA Inc. logo">  
                 <source src="/images/aehca_cover.webm" type="video/webm">  
                 <source src="/images/aehca_cover.mp4" type="video/mp4">  
