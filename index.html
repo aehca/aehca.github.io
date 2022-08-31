@@ -51,11 +51,12 @@ specific focus during 2020 and 2021."
           {% endif %}
           <!-- End of informational alerts-->
           <div class="row">
-            <div class="card text-white container " style="background-color: #49b7e6">
+            <div class="card text-white container" style="background-color: #49b7e6">
               <img src="/images/front-page.png" class="card-img rounded" alt="AEHCA Inc. logo">
               <div class="card-img-overlay row align-items-end justify-content-around">
                 <!-- Button group for triggering modal -->
-                <div class="btn-group flex-wrap">
+                <!-- Buttons are on top of the image by defualt if screensize is greater than medium -->
+                <div class="btn-group flex-wrap d-none d-md-block">
                   <button type="button" id="fp_button" class="btn btn-lg btn-primary video-btn rounded-pill"
                     data-bs-toggle="modal" data-tagVideo="/videos/scholarships.mp4" data-bs-target="#videoModal">
                     Scholarships
@@ -73,12 +74,39 @@ specific focus during 2020 and 2021."
                 </div>
               </div>
             </div>
-            <div class="card">
-              <div class="card-body rounded" style="background-color: #49b7e6">
+            <div class="card d-none d-md-block">
+              <div class="card-body rounded pt-3" style="background-color: #49b7e6">
                 AEHCA works to advance education and healthy living conditions throughout Central America.
                 Forming partnerships with communities to build on their specific needs and existing resources.
                 Our partners in Ipala, Guatemala have been working with us to identify projects that will
                 provide the most benefits for their community.
+              </div>
+            </div>
+            <!-- Moves the buttons below the image if the screensize is medium or smaller -->
+            <div class="card container d-md-none mt-1" style="background-color: #49b7e6">
+              <div class="card-body rounded align-items-end justify-content-around">
+                <div class="btn-group row flex-wrap text-center">
+                  <button type="button" id="fp_button" class="btn btn-primary video-btn rounded-pill"
+                    data-bs-toggle="modal" data-tagVideo="/videos/scholarships.mp4" data-bs-target="#videoModal">
+                    Scholarships
+                  </button>
+                  <button type="button" id="fp_button" class="btn btn-warning video-btn rounded-pill"
+                    data-bs-toggle="modal" data-tagVideo="/videos/IDEC_building_project.mp4"
+                    data-bs-target="#videoModal">
+                    School Building
+                  </button>
+                  <button type="button" id="fp_button" class="btn btn-danger video-btn rounded-pill"
+                    data-bs-toggle="modal" data-tagVideo="/videos/covid-19_food_relief.mp4"
+                    data-bs-target="#videoModal">
+                    Emergency Food Relief
+                  </button>
+                  <p class="pt-3 text-left">AEHCA works to advance education and healthy living conditions throughout
+                    Central
+                    America.
+                    Forming partnerships with communities to build on their specific needs and existing resources.
+                    Our partners in Ipala, Guatemala have been working with us to identify projects that will
+                    provide the most benefits for their community.</p>
+                </div>
               </div>
             </div>
           </div>
