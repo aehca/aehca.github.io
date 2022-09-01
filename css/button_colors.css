@@ -1,0 +1,32 @@
+#fp_button.btn-primary {
+    background-color: #49b7e6;
+    border-color: #307a99;
+}
+
+#fp_button.btn-primary:active,
+#fp_button.btn-primary:hover {
+    background-color: #307299;
+    border-color: #307a99;
+}
+
+#fp_button.btn-warning {
+    background-color: #edc002;
+    border-color: #a08201;
+}
+
+#fp_button.btn-warning:active,
+#fp_button.btn-warning:hover {
+    background-color: #ba9601;
+    border-color: #a08201;
+}
+
+#fp_button.btn-danger {
+    background-color: #f1660d;
+    border-color: #712f05;
+}
+
+#fp_button.btn-danger:active,
+#fp_button.btn-danger:hover {
+    background-color: #be500a;
+    border-color: #712f05;
+}
