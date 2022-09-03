@@ -1,5 +1,3 @@
-- link: /updates.html
-  name: Latest Updates
 - link: /
   name: Home
 - link: /about.html
@@ -10,7 +8,5 @@
   name: <b>$</b> Give
 - link: /contact.html
   name: Contact
-- link: /terms.html
-  name: Terms
-- link: /privacy.html
-  name: Privacy
+- link: /legal.html
+  name: Legal
