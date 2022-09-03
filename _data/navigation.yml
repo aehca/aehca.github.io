@@ -4,6 +4,8 @@
   name: About
 - link: /partnerships.html
   name: Partnerships
+- link: /current.html
+  name: Current Events
 - link: /give.html
   name: <b>$</b> Give
 - link: /contact.html
