@@ -19,6 +19,21 @@ layout: default
       <p></p>
       <p class="lead text-center">Association for Education and Health in Central America</p>
       <hr class="my-4">
+      <h4 class="mt-0 font-weight-bolder">Our Guy in Guate Series</h4>
+      <div class="list-group">
+        {% for pages in site.pages %}
+
+        {% if pages.category == 'our-guy-in-guate' %}
+        {% if pages.title == page.title %}
+        <a class="list-group-item list-group-item-action active" href="{{ pages.url }}">{{ pages.title }}</a>
+        {% else %}
+        <a class="list-group-item list-group-item-action" href="{{ pages.url }}">{{ pages.title }}</a>
+        {% endif %}
+        {% endif %}
+
+        {% endfor %}
+      </div>
+      <hr class="my-4">
       <h4 class="mt-0 font-weight-bolder">Posted Articles</h4>
       <div class="list-group">
         {% for post in site.posts %}
@@ -30,7 +45,7 @@ layout: default
         {% endif %}
         {% endfor %}
       </div>
-      <p></p>
+      <hr class="my-4">
       <h4 class="mt-0 font-weight-bolder">Check out our Social Media</h4>
       <!-- Facebook link using bootstrap svg icon -->
       <a class="btn btn-primary" style="background-color: #3b5998;" href="https://www.facebook.com/AEHCAInc"

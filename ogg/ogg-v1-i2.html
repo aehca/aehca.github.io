@@ -1,0 +1,56 @@
+---
+layout: default
+title: Our Guy in Guate - Volume 1, Issue 2
+tags: health, covid, pandemic, guatemala, ipala
+category: our-guy-in-guate
+keywords: ipala, guatemala, covid, health, pandemic
+author: billy, vernon
+---
+<main role="main">
+    <div class="container-md">
+        <!-- BREADCRUMBS -->
+        <div class="breadcrumbs">
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="text-info" href="/">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-info" href="/current.html">Current Events</a></li>
+                </ol>
+            </nav>
+        </div>
+        <!-- END BREADCRUMBS -->
+        <div class="jumbotron">
+            <p></p>
+            <p class="lead text-center">Association for Education and Health in Central America</p>
+            <hr class="my-4">
+            <h4 class="mt-0">Our Guy in Guate - Volume 1 Issue 2</h4>
+            <div class="media justify-content-center">
+                <iframe src="/pdfs/ogg-v1-i2.pdf#toolbar=0" width="100%" height="500px"></iframe>
+            </div>
+            <hr class="my-4">
+            <p class="font-weight-bold">Read another post within the <u>Our Guy in Guate</u> series.</p>
+            <div class="list-group">
+                {% for pages in site.pages %}
+                {% if pages.category == 'our-guy-in-guate' %}
+                {% if pages.title == page.title %}
+                <a class="list-group-item list-group-item-action active" href="{{ pages.url }}">{{ pages.title }}</a>
+                {% else %}
+                <a class="list-group-item list-group-item-action" href="{{ pages.url }}">{{ pages.title }}</a>
+                {% endif %}
+                {% endif %}
+                {% endfor %}
+            </div>
+            <hr class="my-4">
+            <p class="font-weight-bold">Or read another blog post from our authors.</p>
+            <div class="list-group">
+                {% for post in site.posts %}
+                {% if page.title == post.title %}
+                <a class="list-group-item list-group-item-action active" href="{{ post.url }}">{{ post.title
+                    }}</a>
+                {% else %}
+                <a class="list-group-item list-group-item-action" href="{{ post.url }}">{{ post.title }}</a>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</main>
