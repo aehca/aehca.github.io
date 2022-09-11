@@ -1,0 +1,59 @@
+---
+layout: default
+title: Our Guy in Guate - Volume 1, Issue 5
+tags: health, covid, pandemic, guatemala, ipala
+category: our-guy-in-guate
+keywords: ipala, guatemala, covid, health, pandemic
+author: billy, vernon
+---
+<main role="main">
+    <div class="container-md">
+        <!-- BREADCRUMBS -->
+        <div class="breadcrumbs">
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="text-info" href="/">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-info" href="/current.html">Current Events</a></li>
+                </ol>
+            </nav>
+        </div>
+        <!-- END BREADCRUMBS -->
+        <div class="jumbotron">
+            <p></p>
+            <p class="lead text-center">Association for Education and Health in Central America</p>
+            <hr class="my-4">
+            <h4 class="mt-0">Our Guy in Guate - Volume 1 Issue 5</h4>
+            <div class="media justify-content-center">
+                <video muted autoplay loop playsinline controls class="img-fluid d-flex rounded" alt="our guy in guatemala volume 1, issue 4. a video describing the new need for more 
+                    donations to help support needs-based scholarships.">
+                    <source src="/videos/ogg-v1-i5.mp4" type="video/mp4">
+                </video>
+            </div>
+            <hr class="my-4">
+            <p class="font-weight-bold">Read another post within the <u>Our Guy in Guate</u> series.</p>
+            <div class="list-group">
+                {% for pages in site.pages %}
+                {% if pages.category == 'our-guy-in-guate' %}
+                {% if pages.title == page.title %}
+                <a class="list-group-item list-group-item-action active" href="{{ pages.url }}">{{ pages.title }}</a>
+                {% else %}
+                <a class="list-group-item list-group-item-action" href="{{ pages.url }}">{{ pages.title }}</a>
+                {% endif %}
+                {% endif %}
+                {% endfor %}
+            </div>
+            <hr class="my-4">
+            <p class="font-weight-bold">Or read another blog post from our authors.</p>
+            <div class="list-group">
+                {% for post in site.posts %}
+                {% if page.title == post.title %}
+                <a class="list-group-item list-group-item-action active" href="{{ post.url }}">{{ post.title
+                    }}</a>
+                {% else %}
+                <a class="list-group-item list-group-item-action" href="{{ post.url }}">{{ post.title }}</a>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</main>
