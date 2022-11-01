@@ -33,9 +33,7 @@ For easy service and to set up recurring payments, use our PayPal link."
           <div class="container">
             <div class="row">
               <div class="col text-center">
-                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#donateModal">
-                  Donate via credit card
-                </button>
+                <img class="rounded" src="/images/zelle_badge-dark-small.jpg">
                 <!-- Modal -->
                 <div class="modal fade" id="donateModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                   aria-hidden="true">
@@ -55,8 +53,8 @@ For easy service and to set up recurring payments, use our PayPal link."
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Keep me here</button>
                         <!-- COMMENT THIS OUT WHILE THIS IS NOT THE OFFICIAL SITE -->
-                        <form action="https://checkout.globalgatewaye4.firstdata.com/payment" id="pay_now_form_12edcdebac"
-                          method="post">
+                        <form action="https://checkout.globalgatewaye4.firstdata.com/payment"
+                          id="pay_now_form_12edcdebac" method="post">
                           <input type="hidden" name="x_login" value="WSP-AEHCA-OsnC5wC@vw" />
                           <input type="hidden" name="x_show_form" value="PAYMENT_FORM" />
                           <input type="hidden" name="x_fp_sequence" value="15609677942141422411" />
@@ -83,11 +81,14 @@ For easy service and to set up recurring payments, use our PayPal link."
                 <!-- PayPal button. got the paypal image from mightywriters-->
                 <form action="https://www.paypal.com/donate" method="post" target="_top">
                   <input type="hidden" name="hosted_button_id" value="HJEL3VHRUCN3G" />
-                  <input type="image" src="https://www.eduhealthca.org/images/paypal_button.png" border="0"
-                    name="submit" title="PayPal - The safer, easier way to pay online!"
-                    alt="Donate with PayPal button" />
-                  <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                  <input type="image" src="/images/paypal_button.png" border="0" name="submit"
+                    title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                  <img alt="paypal donation button" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif"
+                    width="1" height="1" />
                 </form>
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#donateModal">
+                  Donate via credit card
+                </button>
               </div>
             </div>
             <hr class="my-4">
