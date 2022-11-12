@@ -53,7 +53,9 @@ specific focus during 2020 and 2021."
         <!-- End of informational alerts-->
         <div class="row">
           <div class="card text-white container" style="background-color: #49b7e6">
-            <img src="/images/front-page-holiday-2022.jpg" class="card-img rounded" alt="AEHCA Inc. logo">
+            <img src="/images/front-page-holiday-2022-horiz.jpg" class="card-img rounded d-none d-lg-block"
+              alt="AEHCA Inc. logo">
+            <img src="/images/front-page-holiday-2022.jpg" class="card-img rounded d-lg-none" alt="AEHCA Inc. logo">
             <div class="card-img-overlay row align-items-end justify-content-around">
               <!-- Button group for triggering modal -->
               <!-- Buttons are on top of the image by defualt if screensize is greater than medium -->
@@ -109,6 +111,18 @@ specific focus during 2020 and 2021."
         </div>
       </div>
       <hr class="my-4">
+      <div class="container">
+        <div class="col text-center">
+          <button type="button" class="btn btn-lg btn-info video-btn rounded-pill" href="/give">
+            Give
+          </button>
+        </div>
+        <p><br>
+          By giving, you are contributing to the education and creating healthy living conditions in Central America
+          communities.
+        </p>
+      </div>
+      <hr class="my-4">
       <div class="card-group">
         <div class="card text-center">
           {% for post in site.posts %}
@@ -146,20 +160,6 @@ specific focus during 2020 and 2021."
             </div>
             <img src="/images/health.jpg" class="card-img-top" alt="ipala health image">
         </div></a>
-      </div>
-
-      <hr class="my-4">
-      <div class="container">
-        <p>During the COVID-19 pandemic, we are providing emergency food relief to the people of Ipala,
-          Guatemala.
-        </p>
-        <div class="col text-center">
-          <a class="btn btn-info" href="/give.html" role="button">Give</a>
-        </div>
-        <p><br>
-          By giving, you are contributing to the education and creating healthy living conditions in Central America
-          communities.
-        </p>
       </div>
     </div>
   </div>
