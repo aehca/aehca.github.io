@@ -26,7 +26,8 @@ This relates to creating issues and resolving them, and then their pull requests
 5. Save.
 6. Click on the open in new tab to go specifically to the issue.
 7. Click "create a branch" for this issue.
-8. Go to your machine, `git checkout master`, then `git pull` then `git checkout <created-branch's name`.
-9. Go through and make the changes required in the issue.
-10. Commit and push your changes.
-11. Create a pull request with the changes in the branch.
+8. Go to your machine, `git checkout master`, then `git pull` then `git checkout <created-branch's name>`.
+9. Move the issue from todo to In Progress.
+10. Go through and make the changes required in the issue.
+11. Commit and push your changes.
+12. Create a pull request with the changes in the branch. When the PR is merged and closed, the issue will automatically move to Done.
