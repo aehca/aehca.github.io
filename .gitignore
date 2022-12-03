@@ -8,3 +8,7 @@ _site
 .sass-cache
 .jekyll-cache/
 .jekyll-metadata
+
+# Mac Development #
+###################
+.DS_STORE
