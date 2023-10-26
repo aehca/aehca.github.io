@@ -6,7 +6,7 @@ partnerships with communities to build on their specific needs and existing reso
 specific focus during 2020 and 2021."
 ---
 <main role="main">
-  <!-- Modal -->
+  <!-- Modal
   <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-xl">
       <div class="modal-content">
@@ -24,10 +24,13 @@ specific focus during 2020 and 2021."
       </div>
     </div>
   </div>
-  <!-- end modal-->
+  end modal-->
   <div class="container-md">
     <br>
     <div class="jumbotron">
+      <p></p>
+      <p class="lead text-center">Association for Education and Health in Central America</p>
+      <hr class="my-4">
       <div class="container">
         <!-- Can use this as a template for various informational alerts we want to give out.. maybe for new posts that dont need to be main content -
         {% assign curMonth = site.time | date: "%m" %}
@@ -90,7 +93,7 @@ specific focus during 2020 and 2021."
                 </div>
               </div>
               <div class="carousel-item" data-interval="9000">
-                <img src="/images/wheelchair_project.jpeg" class="d-block w-100 rounded" alt="wheel chair project">
+                <img src="/images/wheelchair_project.jpeg" class="d-block w-100 rounded" alt="wheelchair project">
                 <div class="carousel-caption d-none d-md-block">
                   <p class="text-light bg-dark">Wheelchair loan program: AEHCA’s helping to secure a more healthy lives
                     for needy disabled people AND their families too!</p>
@@ -192,18 +195,50 @@ specific focus during 2020 and 2021."
           <div class="card container mt-2" style="background-color: #49b7e6">
             <div class="card-body rounded d-flex justify-content-center">
               <div class="btn-group row flex-wrap text-center">
-                <button type="button" id="fp_button" class="btn btn-primary video-btn rounded-pill"
-                  data-bs-toggle="modal" data-tagVideo="/videos/scholarships.mp4" data-bs-target="#videoModal">
-                  Scholarships
-                </button>
-                <button type="button" id="fp_button" class="btn btn-warning video-btn rounded-pill mx-2"
-                  data-bs-toggle="modal" data-tagVideo="/videos/IDEC_building_project.mp4" data-bs-target="#videoModal">
-                  School Building
-                </button>
-                <button type="button" id="fp_button" class="btn btn-danger video-btn rounded-pill"
-                  data-bs-toggle="modal" data-tagVideo="/videos/covid-19_food_relief.mp4" data-bs-target="#videoModal">
-                  Emergency Food Relief
-                </button>
+                {% for post in site.posts %}
+                {% if post.title == "Solar-powered electricity is turning on the lights in rural Ipala" %}
+                <a href="{{ post.url }}"><button type="button" id="fp_button"
+                    class="btn btn-primary video-btn rounded-pill my-2">
+                    Solar
+                  </button>
+                </a>
+                {% endif %}
+                {% if post.title == "Wheelchairs for the disabled AND their families too!" %}
+                <a href="{{ post.url }}"><button type="button" id="fp_button"
+                    class="btn btn-warning video-btn rounded-pill mx-2 my-2">
+                    Wheelchairs
+                  </button>
+                </a>
+                {% endif %}
+                {% if post.title == "Building an additional classroom for Ipala’s diversificado (high school…kinda)" %}
+                <a href="{{ post.url }}"><button type="button" id="fp_button"
+                    class="btn btn-danger video-btn rounded-pill my-2">
+                    Classroom Space
+                  </button>
+                </a>
+                {% endif %}
+                {% if post.title == "Food relief moves beyond Covid-19 model" %}
+                <a href="{{ post.url }}"><button type="button" id="fp_button"
+                    class="btn btn-primary video-btn rounded-pill mx-2 my-2">
+                    Food Assistance
+                  </button>
+                </a>
+                {% endif %}
+                {% if post.title == "AEHCA Inc. expands into a new community - WELCOME Olopa, Guatemala" %}
+                <a href="{{ post.url }}"><button type="button" id="fp_button"
+                    class="btn btn-warning video-btn rounded-pill my-2">
+                    Olapa, Guatemala
+                  </button>
+                </a>
+                {% endif %}
+                {% if post.title == "Full Rollout of Our Post-secondary School Scholarship Program" %}
+                <a href="{{ post.url }}"><button type="button" id="fp_button"
+                    class="btn btn-primary video-btn rounded-pill ml-2 my-2">
+                    Scholarships
+                  </button>
+                </a>
+                {% endif %}
+                {% endfor %}
               </div>
             </div>
           </div>
@@ -219,7 +254,7 @@ specific focus during 2020 and 2021."
           </p>
         </div>
       </div>
-      <hr class="my-4">
+      <!--<hr class="my-4">
       <div class="card-group">
         <div class="card text-center">
           {% for post in site.posts %}
@@ -257,7 +292,7 @@ specific focus during 2020 and 2021."
             </div>
             <img src="/images/health.jpg" class="card-img-top" alt="ipala health image">
         </div></a>
-      </div>
+      </div>-->
     </div>
   </div>
 </main>
