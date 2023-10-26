@@ -19,14 +19,16 @@ layout: default
       <p></p>
       <p class="lead text-center">Association for Education and Health in Central America</p>
       <hr class="my-4">
-      <h4 class="mt-0 font-weight-bolder">Posted Articles</h4>
+      <h4 class="mt-0 font-weight-bolder">Current Articles</h4>
       <div class="list-group">
         {% for post in site.posts %}
-        {% if page.title == post.title %}
+        {% if post.category != 'archived' %}
+        {% if page.title == post.title%}
         <a class="list-group-item list-group-item-action active" href="{{ post.url }}">{{ post.title
-          }}</a>
+              }}</a>
         {% else %}
         <a class="list-group-item list-group-item-action" href="{{ post.url }}">{{ post.title }}</a>
+        {% endif %}
         {% endif %}
         {% endfor %}
       </div>
@@ -40,6 +42,21 @@ layout: default
         <a class="list-group-item list-group-item-action active" href="{{ pages.url }}">{{ pages.title }}</a>
         {% else %}
         <a class="list-group-item list-group-item-action" href="{{ pages.url }}">{{ pages.title }}</a>
+        {% endif %}
+        {% endif %}
+
+        {% endfor %}
+      </div>
+      <hr class="my-4">
+      <h4 class="mt-0 font-weight-bolder">Not So Current Events (archive)</h4>
+      <div class="list-group">
+        {% for post in site.posts %}
+
+        {% if post.category == 'archived' %}
+        {% if post.title == page.title %}
+        <a class="list-group-item list-group-item-action active" href="{{ post.url }}">{{ post.title }}</a>
+        {% else %}
+        <a class="list-group-item list-group-item-action" href="{{ post.url }}">{{ post.title }}</a>
         {% endif %}
         {% endif %}
 
