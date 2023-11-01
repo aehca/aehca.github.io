@@ -1,0 +1,96 @@
+---
+layout: post
+title: Securing flood prone community - Nueva Reforma
+tags: guatemala, ipala, floods, families, health, relief
+keywords: guatemala, ipala, floods, families, health, relief
+author: Vernon
+---
+<main role="main">
+    <div class="container-md">
+        <!-- BREADCRUMBS -->
+        <div class="breadcrumbs">
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="text-info" href="/">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-info" href="/current.html">Current Events</a></li>
+                </ol>
+            </nav>
+        </div>
+        <!-- END BREADCRUMBS -->
+        <div class="jumbotron">
+            <p></p>
+            <p class="lead text-center">Association for Education and Health in Central America</p>
+            <hr class="my-4">
+            <p></p>
+            <div class="media">
+                <div class="container">
+                    <div class="media-body">
+                        <div class="row">
+                            <div class="container">
+                                <h4 class="mt-0">{{ page.title }}</h4>
+                                <p>In the spring of 2022 we learned from our partners in Ipala that many houses in a new
+                                    neighborhood, or “colonia” as they refer to it, were unprepared to prevent damages
+                                    from repeated flooding events. Our Vice-President Vernon Archer visited the site,
+                                    met with ACIDHER (our main partner in Ipala) and representatives of the
+                                    municipality. We analyzed the situation together and came up with some short term
+                                    measures to assist a few families to overcome the emergency situation and agreed to
+                                    keep working together to improve the situation seeking more mid and long term
+                                    solutions for the whole colonia.
+                                </p>
+                                <p>Nueva Reforma is built on an unserviced tract of land given by the mayor to house
+                                    homeless people and displaced squatters (persons uprooted from housing they didn’t
+                                    have title to) and it was clear from the beginning that this was a precarious
+                                    situation. It requires much greater resources than we and our partners can come up
+                                    with in one or two years. The municipality contributed some technical assistance and
+                                    some construction materials, the community has been a showcase of volunteerism to do
+                                    almost all of the physical work, and we provided money for more materials beyond
+                                    what the City and residents could muster.</p>
+                                <p>While our initial efforts focused on raising the floor level of houses it became
+                                    increasingly clear that such a measure was NOT going to be a viable solution for the
+                                    community as a whole and our plans had to evolve. We are now helping the residents
+                                    build out their community to be fully serviced, by appropriate urban design
+                                    standards and building codes. Just like streets, sidewalks and other infrastructure,
+                                    stormwater management has to have a completed network to really function. Resilient
+                                    infrastructure depends on a system of BMPs, including smart landscaping,
+                                    interconnected walls and gutters to keep water out of the houses and provide safe
+                                    places to live for Nueva Reforma residents. </p>
+                                <p>This year we have supported five additional families to make changes/improvements in
+                                    their houses so they can have dry, safe places to live in and this action has a
+                                    positive impact on the community as a whole. However, there are dozens of homes in
+                                    Nueva Reforma still in need of assistance, that's why we remain committed to keeping
+                                    the progress moving. </p>
+                                <video width="100%" height="auto" controls>
+                                    <source src="/videos/flood_control_project.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <p>
+                                    This is just one example of a new, “at modern standard” wall being built to replace
+                                    “wall” that was a mix of stick and wattle (dried mud) and tin roofing. Now it's
+                                    complete, connected to the neighbors wall and will keep out storm water vastly
+                                    better than before.
+                                </p>
+                                <img src="/images/new_walls_flood_project.jpeg" width="50%" height="auto"
+                                    class="mr-3 pb-2 rounded d-none d-lg-block"
+                                    alt="what the newly funded walls look like">
+                                <img src="/images/new_walls_flood_project.jpeg" width="100%" height="auto"
+                                    class="mr-3 pb-2 rounded d-lg-none" alt="what the newly funded walls look like">
+                            </div>
+                        </div>
+                        <hr class="my-4">
+                        <p class="font-weight-bold">Read another post from our team below.</p>
+                        <div class="list-group">
+                            {% for post in site.posts %}
+                            {% if page.title == post.title %}
+                            <a class="list-group-item list-group-item-action active" href="{{ post.url }}">{{ post.title
+                                }}</a>
+                            {% else %}
+                            <a class="list-group-item list-group-item-action" href="{{ post.url }}">{{ post.title }}</a>
+                            {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

@@ -1,0 +1,76 @@
+---
+layout: post
+title: Building an additional classroom for Ipala’s diversificado (high school…kinda)
+tags: guatemala, ipala, education, families, improvements
+keywords: guatemala, ipala, education, families, improvements
+author: Vernon
+---
+<main role="main">
+    <div class="container-md">
+        <!-- BREADCRUMBS -->
+        <div class="breadcrumbs">
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="text-info" href="/">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-info" href="/current.html">Current Events</a></li>
+                </ol>
+            </nav>
+        </div>
+        <!-- END BREADCRUMBS -->
+        <div class="jumbotron">
+            <p></p>
+            <p class="lead text-center">Association for Education and Health in Central America</p>
+            <hr class="my-4">
+            <p></p>
+            <div class="media">
+                <div class="container">
+                    <div class="media-body">
+                        <div class="row">
+                            <div class="container">
+                                <h4 class="mt-0">{{ page.title }}</h4>
+                                <p>One of the first projects we embarked on to help build a more robust education system
+                                    in Ipala broke ground September 25! 🎊 After two years of planning and raising
+                                    funds, a new classroom and start to a second floor is under construction for IDEC
+                                    the closest thing to a public high school anywhere near Ipala (Instituto de
+                                    Educación Diversificada por Cooperativa de Enseñanza. The goal is to have it
+                                    completed and ready to occupy when school resumes in mid January–it’s going to be
+                                    close! The construction crew says they are committed to making it happen, and a
+                                    number of community volunteers are helping speed up the process so let's assume
+                                    it’ll come in on time 😉.
+                                </p>
+                                <p>AEHCA is committed to stay with IDEC’s expansion at least through a second new
+                                    classroom that will get built in 2024 or 2025, depending on how quick IDEC and AEHCA
+                                    can raise the funds needed.</p>
+                                <img src="/images/school_1.jpeg" width="80%" height="auto"
+                                    class="pb-2 rounded mx-auto d-block" alt="school improvement supplies">
+                                <p>The new classroom will be directly over this part of the school. The first stage is
+                                    creating
+                                    concrete columns to support the second floor. Materials like steel reinforcement and
+                                    sand are stockpiled in preparation for constructing that part of the building.
+                                </p>
+                                <p>
+                                    <video class="mx-auto d-block" width="50%" height="auto" controls>
+                                        <source src="/videos/school_project.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </p>
+                            </div>
+                        </div>
+                        <hr class="my-4">
+                        <p class="font-weight-bold">Read another post from our team below.</p>
+                        <div class="list-group">
+                            {% for post in site.posts %}
+                            {% if page.title == post.title %}
+                            <a class="list-group-item list-group-item-action active" href="{{ post.url }}">{{ post.title
+                                }}</a>
+                            {% else %}
+                            <a class="list-group-item list-group-item-action" href="{{ post.url }}">{{ post.title }}</a>
+                            {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

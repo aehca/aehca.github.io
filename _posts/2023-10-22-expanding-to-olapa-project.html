@@ -1,0 +1,66 @@
+---
+layout: post
+title: AEHCA Inc. expands into a new community - WELCOME Olopa, Guatemala
+tags: guatemala, olapa, education, families, health, relief, expansion, new, partnerships, ipala
+keywords: guatemala, olapa, education, families, health, relief, expansion, new, partnerships, ipala
+author: Vernon
+---
+<main role="main">
+    <div class="container-md">
+        <!-- BREADCRUMBS -->
+        <div class="breadcrumbs">
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="text-info" href="/">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-info" href="/current.html">Current Events</a></li>
+                </ol>
+            </nav>
+        </div>
+        <!-- END BREADCRUMBS -->
+        <div class="jumbotron">
+            <p></p>
+            <p class="lead text-center">Association for Education and Health in Central America</p>
+            <hr class="my-4">
+            <p></p>
+            <div class="media">
+                <div class="container">
+                    <div class="media-body">
+                        <div class="row">
+                            <div class="container">
+                                <h4 class="mt-0">{{ page.title }}</h4>
+                                <p>It’s in our name and our DNA that AEHCA Inc. will expand within Guatemala and into
+                                    other countries. This year we laid the foundation to start working in the community
+                                    of Olopa which is about an hour and half distant. A group of local leaders formed a
+                                    committee that will identify needs within AEHCA Inc.s range of activities and then
+                                    they’ll administer the funds we’ll send in 2024 to address those needs.
+                                </p>
+                                <p>We are happy to welcome to our group of collaborators Ayuda para Olopenses de
+                                    Americanos (APOA). Our expectation is to begin supporting a group of rural students
+                                    with the financial aid they need to go to secondary school when the new year opens
+                                    in January. One or two smaller, one time, projects are also in the works.</p>
+                                <img src="/images/olapa_meeting.png" width="50%" height="auto" class="mr-3 pb-2 rounded"
+                                    alt="a meeting with Ayuda para Olopenses de Americanos (APOA)">
+                                <p>APOA’s President Adan Guevara Cardona (far right) says, </p>
+                                <p>“<i>We are happy to welcome AEHCA Inc. to Olopa and grateful to you Americans who are
+                                        coming to help us improve the prospects of our next generation. Better education
+                                        and healthier living will make for happier Olopenses. Thank you!</i>”</p>
+                            </div>
+                        </div>
+                        <hr class="my-4">
+                        <p class="font-weight-bold">Read another post from our team below.</p>
+                        <div class="list-group">
+                            {% for post in site.posts %}
+                            {% if page.title == post.title %}
+                            <a class="list-group-item list-group-item-action active" href="{{ post.url }}">{{ post.title
+                                }}</a>
+                            {% else %}
+                            <a class="list-group-item list-group-item-action" href="{{ post.url }}">{{ post.title }}</a>
+                            {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

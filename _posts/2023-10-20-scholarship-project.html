@@ -1,0 +1,80 @@
+---
+layout: post
+title: Full Rollout of Our Post-secondary School Scholarship Program
+tags: guatemala, ipala, education, families
+keywords: guatemala, ipala, education, families
+author: Vernon
+---
+<main role="main">
+    <div class="container-md">
+        <!-- BREADCRUMBS -->
+        <div class="breadcrumbs">
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="text-info" href="/">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-info" href="/current.html">Current Events</a></li>
+                </ol>
+            </nav>
+        </div>
+        <!-- END BREADCRUMBS -->
+        <div class="jumbotron">
+            <p></p>
+            <p class="lead text-center">Association for Education and Health in Central America</p>
+            <hr class="my-4">
+            <p></p>
+            <div class="media">
+                <div class="container">
+                    <div class="media-body">
+                        <div class="row">
+                            <div class="container">
+                                <h4 class="mt-0">{{ page.title }}</h4>
+                                <p>It’s hard to believe, but the third year of our scholarship program is drawing to a
+                                    close, and when the 4th year begins in January we will be at full rollout! We made
+                                    the commitment to Ipala at the start that we would add 5 scholarships each year
+                                    until we reach 20 and then maintain that number. It's just a few months till that
+                                    objective is met and we’ll be actively supporting 20 students (and their families
+                                    too!). Our target has always been to help good students that without some help would
+                                    be unlikely to find the means to go to college or other post-secondary schools.
+                                    That's what we’ve done and that is what we will continue to do!
+                                </p>
+                                <!--Displays the wider image for devices with large or bigger screens
+                                <img src="/images/front-page-holiday-2022-horiz.jpg" class="card-img rounded d-none d-lg-block"
+                                    alt="AEHCA Inc. logo">
+                                Displays the taller image for devices with smaller than large screens
+                                <img src="/images/front-page-holiday-2022.jpg" class="card-img rounded d-lg-none" alt="AEHCA Inc. logo">
+                                </div> -->
+                                <img src="/images/scholarship_list.png" width="50%" height="auto"
+                                    class="mr-3 pb-2 rounded d-none d-lg-block"
+                                    alt="list of students that have received scholarship support">
+                                <img src="/images/scholarship_list.png" width="100%" height="auto"
+                                    class="mr-3 pb-2 rounded d-lg-none"
+                                    alt="list of students that have received scholarship support">
+                                <p>The accumulated names may look like just a list, but….</p>
+                                <img src="/images/scholarship_students.png" width="100%" height="auto"
+                                    class="pb-2 rounded mx-auto d-block"
+                                    alt="a picture of Vernon and the scholarship students">
+                                <p>They’re all real people with real dreams of being teachers, business women,
+                                    architects, and a host of other occupations. Above we have “our guy in Guate” Vernon
+                                    Archer meeting with the new scholars for 2023 from left to right Melody, Jorge,
+                                    Marlon, Leslie and Dulce. They all said,</p>
+                                <p><i>“Thanks to all of you at AEHCA for helping to make our dreams come true!”</i></p>
+                            </div>
+                        </div>
+                        <hr class="my-4">
+                        <p class="font-weight-bold">Read another post from our team below.</p>
+                        <div class="list-group">
+                            {% for post in site.posts %}
+                            {% if page.title == post.title %}
+                            <a class="list-group-item list-group-item-action active" href="{{ post.url }}">{{ post.title
+                                }}</a>
+                            {% else %}
+                            <a class="list-group-item list-group-item-action" href="{{ post.url }}">{{ post.title }}</a>
+                            {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
