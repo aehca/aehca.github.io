@@ -30,3 +30,9 @@
     background-color: #be500a;
     border-color: #712f05;
 }
+
+.btn-xl {
+    padding: 20px 80px;
+    font-size: 40px;
+    border-radius: 10px;
+}
