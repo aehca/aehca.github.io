@@ -1,132 +1,185 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<!--  created with sitemap generator https://octopus.do  -->
 
-
-<url>
-  <loc>https://www.eduhealthca.org/</loc>
-  <lastmod>2023-01-10T17:38:06+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.eduhealthca.org/about.html</loc>
-  <lastmod>2023-01-10T17:38:06+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.eduhealthca.org/partnerships.html</loc>
-  <lastmod>2023-01-10T17:38:06+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.eduhealthca.org/current.html</loc>
-  <lastmod>2023-01-10T17:38:06+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.eduhealthca.org/give.html</loc>
-  <lastmod>2023-01-10T17:38:06+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.eduhealthca.org/contact.html</loc>
-  <lastmod>2023-01-10T17:38:06+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.eduhealthca.org/legal.html</loc>
-  <lastmod>2023-01-10T17:38:06+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.eduhealthca.org/give</loc>
-  <lastmod>2023-01-10T17:38:06+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.eduhealthca.org/2020/12/15/education-support.html</loc>
-  <lastmod>2023-01-10T17:38:06+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.eduhealthca.org/2021/03/05/health-in-guatemala.html</loc>
-  <lastmod>2023-01-10T17:38:06+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.eduhealthca.org/partnerships/guatemala/ipala.html</loc>
-  <lastmod>2023-01-10T17:38:06+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.eduhealthca.org/ogg/ogg-v1-i1.html</loc>
-  <lastmod>2023-01-10T17:38:06+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.eduhealthca.org/ogg/ogg-v1-i2.html</loc>
-  <lastmod>2023-01-10T17:38:06+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.eduhealthca.org/ogg/ogg-v1-i3.html</loc>
-  <lastmod>2023-01-10T17:38:06+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.eduhealthca.org/ogg/ogg-v1-i4.html</loc>
-  <lastmod>2023-01-10T17:38:06+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.eduhealthca.org/ogg/ogg-v1-i5.html</loc>
-  <lastmod>2023-01-10T17:38:06+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.eduhealthca.org/ogg/ogg-v1-i6.html</loc>
-  <lastmod>2023-01-10T17:38:06+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.eduhealthca.org/ogg/ogg-v1-i7.html</loc>
-  <lastmod>2023-01-10T17:38:06+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.eduhealthca.org/2019/08/09/2019-ipala-guatemala-trip-report.html</loc>
-  <lastmod>2023-01-10T17:38:06+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.eduhealthca.org/privacy.html</loc>
-  <lastmod>2023-01-10T17:38:06+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.eduhealthca.org/terms.html</loc>
-  <lastmod>2023-01-10T17:38:06+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.eduhealthca.org/pdfs/ogg-v1-i1.pdf</loc>
-  <lastmod>2023-01-10T17:38:02+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.eduhealthca.org/pdfs/ogg-v1-i2.pdf</loc>
-  <lastmod>2023-01-10T17:38:02+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.eduhealthca.org/pdfs/ogg-v1-i7.pdf</loc>
-  <lastmod>2023-01-10T17:38:02+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-
-
+    <url>
+        <loc>https://eduhealthca.org</loc>
+        <lastmod>2023-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://eduhealthca.org/2023/10/20/scholarship-project.html</loc>
+        <lastmod>2023-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://eduhealthca.org/2023/10/21/flood-prone-support-project.html</loc>
+        <lastmod>2023-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://eduhealthca.org/2023/10/22/expanding-to-olapa-project.html</loc>
+        <lastmod>2023-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://eduhealthca.org/2023/10/23/food-assistance-project.html</loc>
+        <lastmod>2023-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://eduhealthca.org/2023/10/24/classroom-size-improvement-project.html</loc>
+        <lastmod>2023-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://eduhealthca.org/2023/10/25/wheelchair-project.html</loc>
+        <lastmod>2023-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://eduhealthca.org/2023/10/26/solar-project.html</loc>
+        <lastmod>2023-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://eduhealthca.org/about.html</loc>
+        <lastmod>2023-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://eduhealthca.org/partnerships.html</loc>
+        <lastmod>2023-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://eduhealthca.org/current.html</loc>
+        <lastmod>2023-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://eduhealthca.org/give.html</loc>
+        <lastmod>2023-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://eduhealthca.org/contact.html</loc>
+        <lastmod>2023-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://eduhealthca.org/legal.html</loc>
+        <lastmod>2023-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://eduhealthca.org/give</loc>
+        <lastmod>2023-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://eduhealthca.org/partnerships/guatemala/ipala.html</loc>
+        <lastmod>2023-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://eduhealthca.org/ogg/ogg-v1-i1.html</loc>
+        <lastmod>2023-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://eduhealthca.org/ogg/ogg-v1-i2.html</loc>
+        <lastmod>2023-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://eduhealthca.org/ogg/ogg-v1-i3.html</loc>
+        <lastmod>2023-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://eduhealthca.org/ogg/ogg-v1-i5.html</loc>
+        <lastmod>2023-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://eduhealthca.org/ogg/ogg-v1-i4.html</loc>
+        <lastmod>2023-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://eduhealthca.org/ogg/ogg-v1-i6.html</loc>
+        <lastmod>2023-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://eduhealthca.org/ogg/ogg-v1-i7.html</loc>
+        <lastmod>2023-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://eduhealthca.org/archived/2019/08/09/2019-ipala-guatemala-trip-report.html</loc>
+        <lastmod>2023-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://eduhealthca.org/archived/2020/12/15/education-support.html</loc>
+        <lastmod>2023-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://eduhealthca.org/archived/2020/03/20/letter-from-the-ceo.html</loc>
+        <lastmod>2023-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://eduhealthca.org/archived/2020/09/18/covid-letter-from-the-ceo.html</loc>
+        <lastmod>2023-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://eduhealthca.org/archived/2021/03/05/health-in-guatemala.html</loc>
+        <lastmod>2023-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://eduhealthca.org/privacy.html</loc>
+        <lastmod>2023-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://eduhealthca.org/terms.html</loc>
+        <lastmod>2023-12-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
 </urlset>
