@@ -9,7 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
   standalone: true,
   imports: [CommonModule, RouterOutlet, NavbarComponent],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss', '/node_modules/bootstrap/dist/css/bootstrap.min.css']
+  styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'aehca.github.io';
