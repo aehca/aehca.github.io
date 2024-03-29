@@ -1,33 +1,27 @@
-# www.eduhealthca.org
+# AehcaGithubIo
 
-The website for the non-profit, AECHA Inc.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.7.
 
-Originally written and deployed by David Earles. Now run by and adapted by Andrew Peterson.
+## Development server
 
-## Local Development
-This website is developed with Jekyll. It is compatible with Github Pages, which we use to make the site go live.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-### To view live changes (may require sudo)
-1. `gem install jekyll bundler`
-2. `bundle install` (this may update the gemlock file if being run on macos vs windows or vice versa, if that happens, do not push those changes)
-3. `bundle exec jekyll serve`
-4. http://127.0.0.1:4000 (changes will be shown on refresh (f5 on browser))
+## Code scaffolding
 
-## Pre requisites
-Jekyll requires Ruby. Your local system must have Ruby and a couple other dependecies (read more [here](https://jekyllrb.com/docs/installation/))
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Github Project Development Workflows
-This relates to creating issues and resolving them, and then their pull requests. Does not pertain to Github Actions.
+## Build
 
-1. Go to the [Project Board](https://github.com/orgs/aehca/projects/1/views/1).
-2. In todo, click the + button and choose the aehca project.
-3. Type in the ticket name you want to make. It should be a short description of work needed. (it becomes a draft ticket).
-4. You can click on the ticket name to edit and add a description.
-5. Save.
-6. Click on the open in new tab to go specifically to the issue.
-7. Click "create a branch" for this issue.
-8. Go to your machine, `git checkout master`, then `git pull` then `git checkout <created-branch's name>`.
-9. Move the issue from todo to In Progress.
-10. Go through and make the changes required in the issue.
-11. Commit and push your changes.
-12. Create a pull request with the changes in the branch. When the PR is merged and closed, the issue will automatically move to Done.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
