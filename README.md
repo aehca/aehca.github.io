@@ -1,33 +1,54 @@
-# www.eduhealthca.org
+# Astro Starter Kit: Basics
 
-The website for the non-profit, AECHA Inc.
+```sh
+npm create astro@latest -- --template basics
+```
 
-Originally written and deployed by David Earles. Now run by and adapted by Andrew Peterson.
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
 
-## Local Development
-This website is developed with Jekyll. It is compatible with Github Pages, which we use to make the site go live.
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-### To view live changes (may require sudo)
-1. `gem install jekyll bundler`
-2. `bundle install` (this may update the gemlock file if being run on macos vs windows or vice versa, if that happens, do not push those changes)
-3. `bundle exec jekyll serve`
-4. http://127.0.0.1:4000 (changes will be shown on refresh (f5 on browser))
+![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
 
-## Pre requisites
-Jekyll requires Ruby. Your local system must have Ruby and a couple other dependecies (read more [here](https://jekyllrb.com/docs/installation/))
+## 🚀 Project Structure
 
-## Github Project Development Workflows
-This relates to creating issues and resolving them, and then their pull requests. Does not pertain to Github Actions.
+Inside of your Astro project, you'll see the following folders and files:
 
-1. Go to the [Project Board](https://github.com/orgs/aehca/projects/1/views/1).
-2. In todo, click the + button and choose the aehca project.
-3. Type in the ticket name you want to make. It should be a short description of work needed. (it becomes a draft ticket).
-4. You can click on the ticket name to edit and add a description.
-5. Save.
-6. Click on the open in new tab to go specifically to the issue.
-7. Click "create a branch" for this issue.
-8. Go to your machine, `git checkout master`, then `git pull` then `git checkout <created-branch's name>`.
-9. Move the issue from todo to In Progress.
-10. Go through and make the changes required in the issue.
-11. Commit and push your changes.
-12. Create a pull request with the changes in the branch. When the PR is merged and closed, the issue will automatically move to Done.
+```text
+/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── components/
+│   │   └── Card.astro
+│   ├── layouts/
+│   │   └── Layout.astro
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
+
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+
+Any static assets, like images, can be placed in the `public/` directory.
+
+## 🧞 Commands
+
+All commands are run from the root of the project, from a terminal:
+
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## 👀 Want to learn more?
+
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
