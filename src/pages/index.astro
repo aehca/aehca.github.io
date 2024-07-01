@@ -1,13 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Header from "../layouts/Header.astro";
 import Card from "../components/Card.astro";
 import { Image } from "astro:assets";
 
 import localImage from "../assets/desks.jpg";
 ---
 
-<Header />
 <Layout title="Welcome to Astro.">
   <main>
     <svg
@@ -39,7 +37,6 @@ import localImage from "../assets/desks.jpg";
       </defs>
     </svg>
     <h1>Welcome to <span class="text-gradient">Astro</span></h1>
-    <Image src={localImage} alt="desks" />
     <p class="instructions">
       To get started, open the directory <code>src/pages</code> in your project.<br
       />
@@ -69,9 +66,6 @@ import localImage from "../assets/desks.jpg";
     </ul>
   </main>
 </Layout>
-<script>
-  import "../scripts/menu.js";
-</script>
 
 <style>
   main {
