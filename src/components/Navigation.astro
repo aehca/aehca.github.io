@@ -17,8 +17,11 @@ import logo from "../assets/logo.png";
     ></path></svg
   >
 </label>
-<label id="overlay" for="sidebar-active"></label>
-<div class="links-container w-full flex flex-row items-center">
+<label
+  id="overlay"
+  for="sidebar-active"
+  class="h-full w-full fixed top-0 left-0"></label>
+<div class="links-container fixed w-full h-16 flex flex-row items-center z-10">
   <label for="sidebar-active" class="close-sidebar-button hidden">
     <svg
       class="fill-white"
@@ -32,7 +35,7 @@ import logo from "../assets/logo.png";
     >
   </label>
   <a
-    class="home-link text-white no-underline items-center flex py-0 px-5 h-full text-nowrap text-lg hover:bg-slate-400"
+    class="home-link text-white no-underline items-center flex py-0 pl-2 pr-8 h-full text-nowrap text-lg hover:bg-slate-400"
     href="/"
   >
     <Image src={logo} height={32} alt="aehca inc logo" />AEHCA Inc</a
@@ -49,7 +52,7 @@ import logo from "../assets/logo.png";
 </div>
 
 <style>
-  @media (max-width: 450px) {
+  @media (max-width: 640px) {
     .links-container {
       height: 100%;
       background-color: darkcyan;
@@ -59,7 +62,6 @@ import logo from "../assets/logo.png";
       position: fixed;
       top: 0;
       right: -100%;
-      z-index: 10;
       width: 80%;
 
       box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
@@ -81,12 +83,7 @@ import logo from "../assets/logo.png";
       right: 0;
     }
     #sidebar-active:checked ~ #overlay {
-      height: 100%;
-      width: 100%;
       backdrop-filter: blur(10px);
-      position: fixed;
-      top: 0;
-      left: 0;
       z-index: 9;
     }
   }
