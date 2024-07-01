@@ -60,7 +60,7 @@ import logo from "../assets/logo.png";
       top: 0;
       right: -100%;
       z-index: 10;
-      width: 90%;
+      width: 80%;
 
       box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
       transition: 0.5s ease-out;
@@ -83,6 +83,7 @@ import logo from "../assets/logo.png";
     #sidebar-active:checked ~ #overlay {
       height: 100%;
       width: 100%;
+      backdrop-filter: blur(10px);
       position: fixed;
       top: 0;
       left: 0;
