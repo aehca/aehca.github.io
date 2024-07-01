@@ -1,5 +1,7 @@
 ---
+import { Image } from "astro:assets";
 
+import logo from "../assets/logo.png";
 ---
 
 <input class="hidden" type="checkbox" id="sidebar-active" />
@@ -30,8 +32,10 @@
     >
   </label>
   <a
-    class="home-link text-white no-underline items-center flex py-0 px-5 h-full hover:bg-slate-400"
-    href="/">Home</a
+    class="home-link text-white no-underline items-center flex py-0 px-5 h-full text-nowrap text-lg hover:bg-slate-400"
+    href="/"
+  >
+    <Image src={logo} height={32} alt="aehca inc logo" />AEHCA Inc</a
   >
   <div class="spacer w-full"></div>
   <a
