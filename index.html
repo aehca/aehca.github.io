@@ -269,42 +269,35 @@ specific focus during 2020 and 2021."
           Displays the taller image for devices with smaller than large screens
           <img src="/images/front-page-holiday-2022.jpg" class="card-img rounded d-lg-none" alt="AEHCA Inc. logo">
           </div> -->
-          <div class="card container mt-2" style="background-color: #49b7e6">
+          <div class="card container mt-2 alert-primary">
             <div class="card-body rounded d-flex justify-content-center">
               <div class="btn-group row flex-wrap text-center">
                 {% for post in site.posts %}
                 {% if post.title == "Solar-powered electricity is turning on the lights in rural Ipala" %}
                 <a href="{{ post.url }}"><button type="button" id="fp_button"
-                    class="btn btn-primary video-btn rounded-pill my-2">
+                    class="btn btn-primary video-btn rounded-pill my-2 text-dark">
                     Solar
                   </button>
                 </a>
                 {% endif %}
                 {% if post.title == "Wheelchairs for the disabled AND their families too!" %}
                 <a href="{{ post.url }}"><button type="button" id="fp_button"
-                    class="btn btn-warning video-btn rounded-pill mx-2 my-2">
+                    class="btn btn-danger video-btn rounded-pill mx-2 my-2 text-dark">
                     Health Supports
                   </button>
                 </a>
                 {% endif %}
                 {% if post.title == "Building an additional classroom for Ipala’s diversificado (high school…kinda)" %}
                 <a href="{{ post.url }}"><button type="button" id="fp_button"
-                    class="btn btn-danger video-btn rounded-pill my-2">
+                    class="btn btn-warning video-btn rounded-pill my-2">
                     Classroom Space
                   </button>
                 </a>
                 {% endif %}
                 {% if post.title == "Food relief moves beyond Covid-19 model" %}
                 <a href="{{ post.url }}"><button type="button" id="fp_button"
-                    class="btn btn-primary video-btn rounded-pill mx-2 my-2">
+                    class="btn btn-primary video-btn rounded-pill mx-2 my-2 text-dark">
                     Food Assistance
-                  </button>
-                </a>
-                {% endif %}
-                {% if post.title == "AEHCA Inc. expands into a new community - WELCOME Olopa, Guatemala" %}
-                <a href="{{ post.url }}"><button type="button" id="fp_button"
-                    class="btn btn-danger video-btn rounded-pill my-2">
-                    Olapa, Guatemala
                   </button>
                 </a>
                 {% endif %}
@@ -317,7 +310,7 @@ specific focus during 2020 and 2021."
                 {% endif %}
                 {% if post.title == "Full Rollout of Our Post-secondary School Scholarship Program" %}
                 <a href="{{ post.url }}"><button type="button" id="fp_button"
-                    class="btn btn-primary video-btn rounded-pill ml-2 my-2">
+                    class="btn btn-danger video-btn rounded-pill ml-2 my-2 text-dark">
                     Scholarships
                   </button>
                 </a>
