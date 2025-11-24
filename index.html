@@ -38,18 +38,15 @@ specific focus during 2020 and 2021."
               d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
           </symbol>
         </svg>
-        <div class="alert alert-primary d-flex justify-content-center" role="alert">
+        <div class="alert alert-primary d-flex justify-content-center align-items-center" role="alert">
           <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
             <use xlink:href="#info-fill" />
           </svg>
-          <div>
-            <a href="/pdfs/2025_aehca_closing.pdf" class="alert-link" target="_blank"
-              rel="noopener noreferrer">&nbsp;It's almost the end
-              of the year! Click here to learn more about what we've been up to in 2025.</a>
-            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
-              <use xlink:href="#info-fill" />
-            </svg>
-          </div>
+          <a href="/pdfs/2025_aehca_closing.pdf" class="alert-link" target="_blank"
+            rel="noopener noreferrer">&nbsp;Click here to learn more about what we've been up to in 2025.&nbsp;</a>
+          <svg class="bi flex-shrink-0 ms-2" width="24" height="24" role="img" aria-label="Info:">
+            <use xlink:href="#info-fill" />
+          </svg>
         </div>
 
 
@@ -310,7 +307,7 @@ specific focus during 2020 and 2021."
                 {% endif %}
                 {% if post.title == "Full Rollout of Our Post-secondary School Scholarship Program" %}
                 <a href="{{ post.url }}"><button type="button" id="fp_button"
-                    class="btn btn-danger video-btn rounded-pill ml-2 my-2 text-dark">
+                    class="btn btn-danger video-btn rounded-pill my-2 text-dark">
                     Scholarships
                   </button>
                 </a>
