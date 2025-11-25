@@ -42,8 +42,8 @@ specific focus during 2020 and 2021."
           <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
             <use xlink:href="#info-fill" />
           </svg>
-          <a href="/pdfs/2025_aehca_closing.pdf" class="alert-link" target="_blank"
-            rel="noopener noreferrer">&nbsp;Click here to learn more about what we've been up to in 2025.&nbsp;</a>
+          <a href="/pdfs/2025_aehca_closing.pdf" class="alert-link mx-1" target="_blank" rel="noopener noreferrer">Click
+            here to learn more about what we've been up to in 2025.</a>
           <svg class="bi flex-shrink-0 ms-2" width="24" height="24" role="img" aria-label="Info:">
             <use xlink:href="#info-fill" />
           </svg>
@@ -68,13 +68,28 @@ specific focus during 2020 and 2021."
               <li data-target="#frontPageCarousel" data-slide-to="3"></li>
               <li data-target="#frontPageCarousel" data-slide-to="4"></li>
               <li data-target="#frontPageCarousel" data-slide-to="5"></li>
+              <li data-target="#frontPageCarousel" data-slide-to="6"></li>
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active" data-interval="9000">
+                <img src="/images/slide_00.png" class="d-block w-100"
+                  alt="Providing basic housing to displaced families">
+                <div class="carousel-caption d-none d-md-block">
+                  <p class="text-light bg-dark rounded">
+                    We've been busy using the resources you contributed this year to build the foundation of healthy
+                    living and education in Guatemala.
+                  </p>
+                </div>
+                <div class="carousel-caption d-md-none">
+                  <p class="text-light bg-dark rounded">Your contributions this year have helped
+                    build the foundation of healthy living and education in Guatemala.</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-interval="9000">
                 {% for post in site.posts %}
                 {% if post.title == "Securing flood prone community - Nueva Reforma" %}
                 <a href="{{ post.url }}">
-                  <img src="/images/housing_update_00.png" class="d-block w-100"
+                  <img src="/images/slide_01.png" class="d-block w-100"
                     alt="Providing basic housing to displaced families">
                   <div class="carousel-caption d-none d-md-block">
                     <p class="text-light bg-dark rounded">
@@ -124,7 +139,7 @@ specific focus during 2020 and 2021."
                 {% for post in site.posts %}
                 {% if post.title == "Wheelchairs for the disabled AND their families too!" %}
                 <a href="{{ post.url }}">
-                  <img src="/images/health_updates_01.png" class="d-block w-100 rounded"
+                  <img src="/images/slide_04.png" class="d-block w-100 rounded"
                     alt="Supporting medical needs of disabled persons">
                   <div class="carousel-caption d-none d-md-block">
                     <p class="text-light bg-dark rounded">While continuing to support ambulatory aids our program is
@@ -133,10 +148,8 @@ specific focus during 2020 and 2021."
                       treatments.</p>
                   </div>
                   <div class="carousel-caption d-md-none">
-                    <p class="text-light bg-dark rounded">While continuing to support ambulatory aids our program is
-                      working to team with
-                      existing clinics to assist persons who can't afford medical tests, lab work, and short-term
-                      treatments.</p>
+                    <p class="text-light bg-dark rounded">Our program is working with existing clinics to assist
+                      persons who can't afford medical expenses</p>
                   </div>
                 </a>
                 {% endif %}
@@ -149,15 +162,12 @@ specific focus during 2020 and 2021."
                   <img src="/images/sizing_update_00.png" class="d-block w-100 rounded"
                     alt="Building classroom space project">
                   <div class="carousel-caption d-none d-md-block">
-                    <p class="text-light bg-dark rounded">Construction started for a new high school classroom. Neither
-                      COVID-19,
-                      nor inflation could ultimately stop us and our partner school IDEC from moving forward!
-                      Anticipated
-                      completion January 2024.</p>
+                    <p class="text-light bg-dark rounded">We completed the second of two classrooms with our partners at
+                      the high school IDEC. Project complete!</p>
                   </div>
                   <div class="carousel-caption d-md-none">
-                    <p class="text-light bg-dark rounded">Construction starting at IDEC for the first of 2 new
-                      classrooms.</p>
+                    <p class="text-light bg-dark rounded">Project completed! 2 of 2 classrooms at IDEC are now complete.
+                    </p>
                   </div>
                 </a>
                 {% endif %}
@@ -175,9 +185,8 @@ specific focus during 2020 and 2021."
                     </p>
                   </div>
                   <div class="carousel-caption d-md-none">
-                    <p class="text-light bg-dark rounded">Food support for disadvantaged senior citizens and persons
-                      with disabilities is an ongoing
-                      significant need. This year we assisted 200 households and hope to increase that number next year.
+                    <p class="text-light bg-dark rounded">This year we assisted 200 households and hope to increase that
+                      number next year.
                     </p>
                   </div>
                 </a>
