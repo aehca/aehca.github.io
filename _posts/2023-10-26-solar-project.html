@@ -46,8 +46,35 @@ author: Vernon
             <div class="media">
                 <div class="container">
                     <div class="row">
+                        <div class="col-12">
+                            <p>
+                                <strong>(2025 Update)</strong> Installing solar lighting/charging systems is underway
+                                for 22
+                                more houses that lack electricity.
+                                This is up from 13 houses last year. All should be installed before Christmas - how will
+                                that be for a
+                                Christmas present?! A big shout out to Nelson Cabrera, manager for all of our
+                                installations,
+                                done right,
+                                and helping keep our prices down despite real inflationary pressures - and just a good
+                                guy
+                                to work with!.
+                            </p>
+                            <div class="row mb-4">
+                                <div class="col-6">
+                                    <img src="/images/solar_progress_00.jpeg" width="75%" height="auto"
+                                        class="rounded mx-auto d-block" alt="solar progress">
+                                </div>
+                                <div class="col-6">
+                                    <img src="/images/solar_progress_02.png" width="100%" height="auto"
+                                        class="rounded mx-auto d-block" alt="solar progress">
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+
                         <div class="col-sm-5">
-                            <h4 class="font-weight-bolder"> {{ page.title }}</h4>
+                            <h4 class="font-weight-bolder">{{ page.title }}</h4>
                             <p></p>
                             <div class="media-body">
                                 <p>How many of your neighbors lack any electricity in their house? Well it's all too
@@ -156,7 +183,7 @@ author: Vernon
                         {% for post in site.posts %}
                         {% if page.title == post.title %}
                         <a class="list-group-item list-group-item-action active" href="{{ post.url }}">{{ post.title
-                                }}</a>
+                            }}</a>
                         {% else %}
                         <a class="list-group-item list-group-item-action" href="{{ post.url }}">{{ post.title }}</a>
                         {% endif %}

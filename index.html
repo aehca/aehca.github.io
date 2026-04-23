@@ -32,34 +32,31 @@ specific focus during 2020 and 2021."
       <p class="lead text-center">Association for Education and Health in Central America</p>
       <hr class="my-4">
       <div class="container">
-        <!-- Can use this as a template for various informational alerts we want to give out.. maybe for new posts that dont need to be main content -
-        {% assign curMonth = site.time | date: "%m" %}
-        {% if curMonth >= "11" or curMonth < "04" %} <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
           <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
             <path
               d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
           </symbol>
+        </svg>
+        <div class="alert alert-primary d-flex justify-content-center align-items-center" role="alert">
+          <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
+            <use xlink:href="#info-fill" />
           </svg>
-          <div class="alert alert-primary d-flex align-items-center" role="alert">
-            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
-              <use xlink:href="#info-fill" />
-            </svg>
-            <div>
-              It's almost the end of the year! Click
-              <a href="https://blog.taxact.com/take-advantage-of-expanded-tax-deductions-for-charitable-donations-in-2021-email/"
-                target="_blank" rel="noopener noreferrer">here</a>
-              to learn about the expanded tax deductions for charitable donations in 2021.
-            </div>
-          </div>
-          {% endif %}
-        -->
+          <a href="/pdfs/2025_aehca_closing.pdf" class="alert-link mx-1" target="_blank" rel="noopener noreferrer">Click
+            here to learn more about what we've been up to in 2025.</a>
+          <svg class="bi flex-shrink-0 ms-2" width="24" height="24" role="img" aria-label="Info:">
+            <use xlink:href="#info-fill" />
+          </svg>
+        </div>
+
+
         <!-- End of informational alerts-->
         <!-- PHOTO CAROUSEL WITH BUTTONS AND CAPTIONS-->
         <div class="container bg-warning rounded mb-2 py-2">
-          One significant step forward toward insuring Ipaltecos of a dry, healthy home for all happened in
-          August. A community meeting organized by us, our partners in Ipala and Habitat for Humanity
-          International met to set priorities for storm water control and seek neighborhood input for things
-          needed to create a sustainable community in the coming years.
+          At AEHCA we believe each of us has a little light
+          to share out into the world. This last year has been filled with lots of new little lights getting
+          brighter and planning to turn on even more in the year ahead. Review our programs,
+          get updated on what's happened recently and some plans for the future.
         </div>
 
         <div class="col">
@@ -72,55 +69,67 @@ specific focus during 2020 and 2021."
               <li data-target="#frontPageCarousel" data-slide-to="4"></li>
               <li data-target="#frontPageCarousel" data-slide-to="5"></li>
               <li data-target="#frontPageCarousel" data-slide-to="6"></li>
-              <li data-target="#frontPageCarousel" data-slide-to="7"></li>
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active" data-interval="9000">
-                <img src="/images/wide-collage.jpeg" class="d-block w-100" alt="AEHCA Inc. logo">
+                <img src="/images/slide_00.png" class="d-block w-100"
+                  alt="Providing basic housing to displaced families">
                 <div class="carousel-caption d-none d-md-block">
                   <p class="text-light bg-dark rounded">
-                    At AEHCA we believe each of us has a little light
-                    to share out into the world. This last year has been filled with lots of new little lights getting
-                    brighter and planning to turn on even more in the year ahead. Review our programs,
-                    get updated on what's happened recently and some plans for the future.
+                    We've been busy using the resources you contributed this year to build the foundation of healthy
+                    living and education in Guatemala.
                   </p>
                 </div>
                 <div class="carousel-caption d-md-none">
-                  <p class="text-light bg-dark rounded">This last year has been filled with lots of new little lights
-                    getting
-                    brighter and planning to turn on even more in the year ahead.</p>
+                  <p class="text-light bg-dark rounded">Your contributions this year have helped
+                    build the foundation of healthy living and education in Guatemala.</p>
                 </div>
               </div>
               <div class="carousel-item" data-interval="9000">
                 {% for post in site.posts %}
                 {% if post.title == "Securing flood prone community - Nueva Reforma" %}
                 <a href="{{ post.url }}">
-                  <img src="/images/flood_project.jpeg" class="d-block w-100 rounded"
-                    alt="Securing flood prone community - Nueva Reforma">
+                  <img src="/images/slide_01.png" class="d-block w-100"
+                    alt="Providing basic housing to displaced families">
                   <div class="carousel-caption d-none d-md-block">
-                    <p class="text-light bg-dark">Working with Nueva Reforma neighborhood to reduce flooding risk. Click
-                      on the image or the "Dry, Healthy Housing" button to learn more.</p>
+                    <p class="text-light bg-dark rounded">
+                      We've been funding materials for 4 houses to provide basic housing to displaced families.
+                    </p>
                   </div>
                   <div class="carousel-caption d-md-none">
-                    <p class="text-light bg-dark">Working with Nueva Reforma neighborhood to reduce flooding risk. Click
-                      on the image or the "Dry, Healthy Housing" button to learn more.</p>
+                    <p class="text-light bg-dark rounded">We've been funding materials for 4 houses to provide basic
+                      housing to displaced families.</p>
                   </div>
-                  {% endif %}
-                  {% endfor %}
+                </a>
+                {% endif %}
+                {% endfor %}
+              </div>
+              <div class="carousel-item" data-interval="9000">
+                <img src="/images/school_desk_updates_00.png" class="d-block w-100 rounded"
+                  alt="Rehabilitating student desks">
+                <div class="carousel-caption d-none d-md-block">
+                  <p class="text-light bg-dark">We rehabilitated 80 student desks, over 4 schools so far this year and
+                    will do 20 more before
+                    closing the year.</p>
+                </div>
+                <div class="carousel-caption d-md-none">
+                  <p class="text-light bg-dark">We rehabilitated 80 student desks, over 4 schools so far this year and
+                    will do 20 more before
+                    closing the year.</p>
+                </div>
               </div>
               <div class="carousel-item" data-interval="9000">
                 {% for post in site.posts %}
                 {% if post.title == "Solar-powered electricity is turning on the lights in rural Ipala" %}
                 <a href="{{ post.url }}">
-                  <img src="/images/solar_project.jpeg" class="d-block w-100 rounded" alt="solar project">
+                  <img src="/images/electricity_update_00.png" class="d-block w-100 rounded" alt="solar project">
                   <div class="carousel-caption d-none d-md-block">
-                    <p class="text-light bg-dark rounded">AEHCA and our partners are using solar-powered electricity to
-                      turn
-                      on the light in rural Ipala, Guatemala.</p>
+                    <p class="text-light bg-dark rounded">We've been installing solar-powered electricity in 22 rural
+                      Ipala, Guatemala houses.</p>
                   </div>
                   <div class="carousel-caption d-md-none">
-                    <p class="text-light bg-dark rounded">Solar-powered electricity is turning on the lights in rural
-                      Ipala</p>
+                    <p class="text-light bg-dark rounded">We've been installing solar-powered electricity in 22 rural
+                      Ipala, Guatemala houses.</p>
                   </div>
                 </a>
                 {% endif %}
@@ -130,15 +139,17 @@ specific focus during 2020 and 2021."
                 {% for post in site.posts %}
                 {% if post.title == "Wheelchairs for the disabled AND their families too!" %}
                 <a href="{{ post.url }}">
-                  <img src="/images/wheelchair_project.jpeg" class="d-block w-100 rounded" alt="wheelchair project">
+                  <img src="/images/slide_04.png" class="d-block w-100 rounded"
+                    alt="Supporting medical needs of disabled persons">
                   <div class="carousel-caption d-none d-md-block">
-                    <p class="text-light bg-dark rounded">Wheelchair loan program: AEHCA’s helping to secure a more
-                      healthy
-                      lives
-                      for needy disabled people AND their families too!</p>
+                    <p class="text-light bg-dark rounded">While continuing to support ambulatory aids our program is
+                      working to team with
+                      existing clinics to assist persons who can't afford medical tests, lab work, and short-term
+                      treatments.</p>
                   </div>
                   <div class="carousel-caption d-md-none">
-                    <p class="text-light bg-dark rounded">Wheelchairs for the disabled AND their families too!</p>
+                    <p class="text-light bg-dark rounded">Our program is working with existing clinics to assist
+                      persons who can't afford medical expenses</p>
                   </div>
                 </a>
                 {% endif %}
@@ -148,18 +159,15 @@ specific focus during 2020 and 2021."
                 {% for post in site.posts %}
                 {% if post.title == "Building an additional classroom for Ipala’s diversificado (high school…kinda)" %}
                 <a href="{{ post.url }}">
-                  <img src="/images/classroom_space_project.jpeg" class="d-block w-100 rounded"
+                  <img src="/images/sizing_update_00.png" class="d-block w-100 rounded"
                     alt="Building classroom space project">
                   <div class="carousel-caption d-none d-md-block">
-                    <p class="text-light bg-dark rounded">Construction started for a new high school classroom. Neither
-                      COVID-19,
-                      nor inflation could ultimately stop us and our partner school IDEC from moving forward!
-                      Anticipated
-                      completion January 2024.</p>
+                    <p class="text-light bg-dark rounded">We completed the second of two classrooms with our partners at
+                      the high school IDEC. Project complete!</p>
                   </div>
                   <div class="carousel-caption d-md-none">
-                    <p class="text-light bg-dark rounded">Construction starting at IDEC for the first of 2 new
-                      classrooms.</p>
+                    <p class="text-light bg-dark rounded">Project completed! 2 of 2 classrooms at IDEC are now complete.
+                    </p>
                   </div>
                 </a>
                 {% endif %}
@@ -169,77 +177,21 @@ specific focus during 2020 and 2021."
                 {% for post in site.posts %}
                 {% if post.title == "Food relief moves beyond Covid-19 model" %}
                 <a href="{{ post.url }}">
-                  <img src="/images/food_distribution_project.jpg" class="d-block w-100 rounded"
-                    alt="Food assistance Project">
+                  <img src="/images/food_carousel_00.png" class="d-block w-100 rounded" alt="Food assistance Project">
                   <div class="carousel-caption d-none d-md-block">
-                    <p class="text-light bg-dark rounded">Food assistance needs changed significantly over the last year
-                      as
-                      COVID restrictions lifted and we’ve adjusted too. It’s clear now we need to concentrate on seniors
-                      while keeping our eyes and hearts open to other needs too – like among disabled persons.</p>
+                    <p class="text-light bg-dark rounded">Food support for disadvantaged senior citizens and persons
+                      with disabilities is an ongoing
+                      significant need. This year we assisted 200 households and hope to increase that number next year.
+                    </p>
                   </div>
                   <div class="carousel-caption d-md-none">
-                    <p class="text-light bg-dark rounded">Food relief moves beyond Covid-19 model.</p>
+                    <p class="text-light bg-dark rounded">This year we assisted 200 households and hope to increase that
+                      number next year.
+                    </p>
                   </div>
                 </a>
                 {% endif %}
                 {% endfor %}
-              </div>
-              <div class="carousel-item" data-interval="9000">
-                {% for post in site.posts %}
-                {% if post.title == "AEHCA Inc. expands into a new community - WELCOME Olopa, Guatemala" %}
-                <a href="{{ post.url }}">
-                  <img src="/images/guatemala_growth.png" class="d-block w-100 rounded"
-                    alt="Growing outwards in Guatemala">
-                  <div class="carousel-caption d-none d-md-block">
-                    <p class="text-light bg-dark rounded">2023 is the year we moved out into a second Guatemalan
-                      community.
-                      It's a huge move on its own, but also a big step towards starting work in other parts of Central
-                      America too. Our new partner committee is in Olopa, Guatemala near the Hondoran border. We are
-                      working together to start a scholarship program in January and then other projects later in 2024.
-                    </p>
-                  </div>
-                  <div class="carousel-caption d-md-none">
-                    <p class="text-light bg-dark rounded">Expanding into a new location: Welcome Olopa, Guatemala!</p>
-                  </div>
-                  {% endif %}
-                  {% endfor %}
-              </div>
-              <div class="carousel-item" data-interval="9000">
-                {% for post in site.posts %}
-                {% if post.title == "Securing flood prone community - Nueva Reforma" %}
-                <a href="{{ post.url }}">
-                  <img src="/images/flood_project.jpeg" class="d-block w-100 rounded"
-                    alt="Securing flood prone community - Nueva Reforma">
-                  <div class="carousel-caption d-none d-md-block">
-                    <p class="text-light bg-dark rounded">Working with Nueva Reforma neighborhood to reduce flooding
-                      risk.</p>
-                  </div>
-                  <div class="carousel-caption d-md-none">
-                    <p class="text-light bg-dark rounded">Working with Nueva Reforma neighborhood to reduce flooding
-                      risk.</p>
-                  </div>
-                  {% endif %}
-                  {% endfor %}
-              </div>
-              <div class="carousel-item" data-interval="9000">
-                {% for post in site.posts %}
-                {% if post.title == "Full Rollout of Our Post-secondary School Scholarship Program" %}
-                <a href="{{ post.url }}">
-                  <img src="/images/scholarship_project.jpeg" class="d-block w-100 rounded"
-                    alt="Full realization of scholarship program">
-                  <div class="carousel-caption d-none d-md-block">
-                    <p class="text-light bg-dark rounded">January 2024 will see full implementation of our scholarship
-                      program.
-                    </p>
-                  </div>
-                  <div class="carousel-caption d-md-none">
-                    <p class="text-light bg-dark rounded">Full implementation of scholarship/financial aid program is
-                      almost
-                      here!
-                    </p>
-                  </div>
-                  {% endif %}
-                  {% endfor %}
               </div>
             </div>
             <a class="carousel-control-prev" href="#frontPageCarousel" role="button" data-slide="prev">
@@ -272,42 +224,35 @@ specific focus during 2020 and 2021."
           Displays the taller image for devices with smaller than large screens
           <img src="/images/front-page-holiday-2022.jpg" class="card-img rounded d-lg-none" alt="AEHCA Inc. logo">
           </div> -->
-          <div class="card container mt-2" style="background-color: #49b7e6">
+          <div class="card container mt-2 alert-primary">
             <div class="card-body rounded d-flex justify-content-center">
               <div class="btn-group row flex-wrap text-center">
                 {% for post in site.posts %}
                 {% if post.title == "Solar-powered electricity is turning on the lights in rural Ipala" %}
                 <a href="{{ post.url }}"><button type="button" id="fp_button"
-                    class="btn btn-primary video-btn rounded-pill my-2">
+                    class="btn btn-primary video-btn rounded-pill my-2 text-dark">
                     Solar
                   </button>
                 </a>
                 {% endif %}
                 {% if post.title == "Wheelchairs for the disabled AND their families too!" %}
                 <a href="{{ post.url }}"><button type="button" id="fp_button"
-                    class="btn btn-warning video-btn rounded-pill mx-2 my-2">
+                    class="btn btn-danger video-btn rounded-pill mx-2 my-2 text-dark">
                     Health Supports
                   </button>
                 </a>
                 {% endif %}
                 {% if post.title == "Building an additional classroom for Ipala’s diversificado (high school…kinda)" %}
                 <a href="{{ post.url }}"><button type="button" id="fp_button"
-                    class="btn btn-danger video-btn rounded-pill my-2">
+                    class="btn btn-warning video-btn rounded-pill my-2">
                     Classroom Space
                   </button>
                 </a>
                 {% endif %}
                 {% if post.title == "Food relief moves beyond Covid-19 model" %}
                 <a href="{{ post.url }}"><button type="button" id="fp_button"
-                    class="btn btn-primary video-btn rounded-pill mx-2 my-2">
+                    class="btn btn-primary video-btn rounded-pill mx-2 my-2 text-dark">
                     Food Assistance
-                  </button>
-                </a>
-                {% endif %}
-                {% if post.title == "AEHCA Inc. expands into a new community - WELCOME Olopa, Guatemala" %}
-                <a href="{{ post.url }}"><button type="button" id="fp_button"
-                    class="btn btn-danger video-btn rounded-pill my-2">
-                    Olapa, Guatemala
                   </button>
                 </a>
                 {% endif %}
@@ -320,7 +265,7 @@ specific focus during 2020 and 2021."
                 {% endif %}
                 {% if post.title == "Full Rollout of Our Post-secondary School Scholarship Program" %}
                 <a href="{{ post.url }}"><button type="button" id="fp_button"
-                    class="btn btn-primary video-btn rounded-pill ml-2 my-2">
+                    class="btn btn-danger video-btn rounded-pill my-2 text-dark">
                     Scholarships
                   </button>
                 </a>
