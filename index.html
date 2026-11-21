@@ -1,330 +1,145 @@
 ---
 title: Home
 layout: default
-description: "AEHCA Inc. works to advance education and healthy living conditions throughout Central America. Forming
-partnerships with communities to build on their specific needs and existing resources. COVID-19 releif has been a
-specific focus during 2020 and 2021."
+description: "AEHCA Inc. works with communities to advance education and healthy living conditions throughout Central
+America."
 ---
-<main role="main">
-  <!-- Modal
-  <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-xl">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="videoModalLabel">Project info</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <video class="col" controls muted autoplay playsinline>
-            <source src="" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-  end modal-->
+<main role="main" class="front-page">
   <div class="container-md">
-    <br>
     <div class="jumbotron">
-      <p></p>
       <p class="lead text-center">Association for Education and Health in Central America</p>
       <hr class="my-4">
       <div class="container">
-        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-          <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
-            <path
-              d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
-          </symbol>
-        </svg>
-        <div class="alert alert-primary d-flex justify-content-center align-items-center" role="alert">
-          <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
-            <use xlink:href="#info-fill" />
-          </svg>
-          <a href="/pdfs/AEHCA_report_mid_2026.pdf" class="alert-link mx-1" target="_blank" rel="noopener noreferrer">Click
+        <div class="alert alert-primary text-center" role="alert">
+          <a href="/pdfs/AEHCA_report_mid_2026.pdf" class="alert-link" target="_blank" rel="noopener noreferrer">Click
             here to learn more about what we've been up to in 2026.</a>
-          <svg class="bi flex-shrink-0 ms-2" width="24" height="24" role="img" aria-label="Info:">
-            <use xlink:href="#info-fill" />
-          </svg>
+        </div>
+        <div class="alert alert-warning front-announcement">
+          At AEHCA we believe each of us has a little light to share out into the world. Review our programs, get
+          updated on what's happened recently and some plans for the future.
         </div>
 
-
-        <!-- End of informational alerts-->
-        <!-- PHOTO CAROUSEL WITH BUTTONS AND CAPTIONS-->
-        <div class="container bg-warning rounded mb-2 py-2">
-          At AEHCA we believe each of us has a little light
-          to share out into the world. This last year has been filled with lots of new little lights getting
-          brighter and planning to turn on even more in the year ahead. Review our programs,
-          get updated on what's happened recently and some plans for the future.
-        </div>
-
-        <div class="col">
-          <div id="frontPageCarousel" class="carousel slide">
-            <ol class="carousel-indicators">
-              <li data-target="#frontPageCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#frontPageCarousel" data-slide-to="1"></li>
-              <li data-target="#frontPageCarousel" data-slide-to="2"></li>
-              <li data-target="#frontPageCarousel" data-slide-to="3"></li>
-              <li data-target="#frontPageCarousel" data-slide-to="4"></li>
-              <li data-target="#frontPageCarousel" data-slide-to="5"></li>
-              <li data-target="#frontPageCarousel" data-slide-to="6"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-interval="9000">
-                <img src="/images/slide_00.png" class="d-block w-100"
-                  alt="Providing basic housing to displaced families">
-                <div class="carousel-caption d-none d-md-block">
-                  <p class="text-light bg-dark rounded">
-                    We've been busy using the resources you contributed this year to build the foundation of healthy
-                    living and education in Guatemala.
-                  </p>
-                </div>
-                <div class="carousel-caption d-md-none">
-                  <p class="text-light bg-dark rounded">Your contributions this year have helped
-                    build the foundation of healthy living and education in Guatemala.</p>
-                </div>
-              </div>
-              <div class="carousel-item" data-interval="9000">
-                {% for post in site.posts %}
-                {% if post.title == "Securing flood prone community - Nueva Reforma" %}
-                <a href="{{ post.url }}">
-                  <img src="/images/slide_01.png" class="d-block w-100"
-                    alt="Providing basic housing to displaced families">
-                  <div class="carousel-caption d-none d-md-block">
-                    <p class="text-light bg-dark rounded">
-                      We've been funding materials for 4 houses to provide basic housing to displaced families.
-                    </p>
-                  </div>
-                  <div class="carousel-caption d-md-none">
-                    <p class="text-light bg-dark rounded">We've been funding materials for 4 houses to provide basic
-                      housing to displaced families.</p>
-                  </div>
-                </a>
-                {% endif %}
-                {% endfor %}
-              </div>
-              <div class="carousel-item" data-interval="9000">
-                <img src="/images/school_desk_updates_00.png" class="d-block w-100 rounded"
-                  alt="Rehabilitating student desks">
-                <div class="carousel-caption d-none d-md-block">
-                  <p class="text-light bg-dark">We rehabilitated 80 student desks, over 4 schools so far this year and
-                    will do 20 more before
-                    closing the year.</p>
-                </div>
-                <div class="carousel-caption d-md-none">
-                  <p class="text-light bg-dark">We rehabilitated 80 student desks, over 4 schools so far this year and
-                    will do 20 more before
-                    closing the year.</p>
-                </div>
-              </div>
-              <div class="carousel-item" data-interval="9000">
-                {% for post in site.posts %}
-                {% if post.title == "Solar-powered electricity is turning on the lights in rural Ipala" %}
-                <a href="{{ post.url }}">
-                  <img src="/images/electricity_update_00.png" class="d-block w-100 rounded" alt="solar project">
-                  <div class="carousel-caption d-none d-md-block">
-                    <p class="text-light bg-dark rounded">We've been installing solar-powered electricity in 22 rural
-                      Ipala, Guatemala houses.</p>
-                  </div>
-                  <div class="carousel-caption d-md-none">
-                    <p class="text-light bg-dark rounded">We've been installing solar-powered electricity in 22 rural
-                      Ipala, Guatemala houses.</p>
-                  </div>
-                </a>
-                {% endif %}
-                {% endfor %}
-              </div>
-              <div class="carousel-item" data-interval="9000">
-                {% for post in site.posts %}
-                {% if post.title == "Wheelchairs for the disabled AND their families too!" %}
-                <a href="{{ post.url }}">
-                  <img src="/images/slide_04.png" class="d-block w-100 rounded"
-                    alt="Supporting medical needs of disabled persons">
-                  <div class="carousel-caption d-none d-md-block">
-                    <p class="text-light bg-dark rounded">While continuing to support ambulatory aids our program is
-                      working to team with
-                      existing clinics to assist persons who can't afford medical tests, lab work, and short-term
-                      treatments.</p>
-                  </div>
-                  <div class="carousel-caption d-md-none">
-                    <p class="text-light bg-dark rounded">Our program is working with existing clinics to assist
-                      persons who can't afford medical expenses</p>
-                  </div>
-                </a>
-                {% endif %}
-                {% endfor %}
-              </div>
-              <div class="carousel-item" data-interval="9000">
-                {% for post in site.posts %}
-                {% if post.title == "Building an additional classroom for Ipala’s diversificado (high school…kinda)" %}
-                <a href="{{ post.url }}">
-                  <img src="/images/sizing_update_00.png" class="d-block w-100 rounded"
-                    alt="Building classroom space project">
-                  <div class="carousel-caption d-none d-md-block">
-                    <p class="text-light bg-dark rounded">We completed the second of two classrooms with our partners at
-                      the high school IDEC. Project complete!</p>
-                  </div>
-                  <div class="carousel-caption d-md-none">
-                    <p class="text-light bg-dark rounded">Project completed! 2 of 2 classrooms at IDEC are now complete.
-                    </p>
-                  </div>
-                </a>
-                {% endif %}
-                {% endfor %}
-              </div>
-              <div class="carousel-item" data-interval="9000">
-                {% for post in site.posts %}
-                {% if post.title == "Food relief moves beyond Covid-19 model" %}
-                <a href="{{ post.url }}">
-                  <img src="/images/food_carousel_00.png" class="d-block w-100 rounded" alt="Food assistance Project">
-                  <div class="carousel-caption d-none d-md-block">
-                    <p class="text-light bg-dark rounded">Food support for disadvantaged senior citizens and persons
-                      with disabilities is an ongoing
-                      significant need. This year we assisted 200 households and hope to increase that number next year.
-                    </p>
-                  </div>
-                  <div class="carousel-caption d-md-none">
-                    <p class="text-light bg-dark rounded">This year we assisted 200 households and hope to increase that
-                      number next year.
-                    </p>
-                  </div>
-                </a>
-                {% endif %}
-                {% endfor %}
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#frontPageCarousel" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#frontPageCarousel" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-          <!-- END PHOTO CAROUSEL WITH BUTTONS AND CAPTIONS-->
-        </div>
-        <div class="row">
-
-          <!-- <div class="card text-white container" style="background-color: #49b7e6">
-          Displays the wider video for devices with large or bigger screens
-
-            <video class="col d-none d-lg-block" muted autoplay playsinline loop>
-              <source src="/videos/may_front_page_desktop_video.mp4" type="video/mp4">
-            </video>
-          Displays the taller video for devices with smaller than large screens
-            <video class="col rounded d-lg-none" muted autoplay playsinline loop>
-              <source src="/videos/may_front_page_mobile_video.mp4" type="video/mp4">
-            </video>
-            
-          Displays the wider image for devices with large or bigger screens
-          <img src="/images/front-page-holiday-2022-horiz.jpg" class="card-img rounded d-none d-lg-block"
-              alt="AEHCA Inc. logo">
-          Displays the taller image for devices with smaller than large screens
-          <img src="/images/front-page-holiday-2022.jpg" class="card-img rounded d-lg-none" alt="AEHCA Inc. logo">
-          </div> -->
-          <div class="card container mt-2 alert-primary">
-            <div class="card-body rounded d-flex justify-content-center">
-              <div class="btn-group row flex-wrap text-center">
-                {% for post in site.posts %}
-                {% if post.title == "Solar-powered electricity is turning on the lights in rural Ipala" %}
-                <a href="{{ post.url }}"><button type="button" id="fp_button"
-                    class="btn btn-primary video-btn rounded-pill my-2 text-dark">
-                    Solar
-                  </button>
-                </a>
-                {% endif %}
-                {% if post.title == "Wheelchairs for the disabled AND their families too!" %}
-                <a href="{{ post.url }}"><button type="button" id="fp_button"
-                    class="btn btn-danger video-btn rounded-pill mx-2 my-2 text-dark">
-                    Health Supports
-                  </button>
-                </a>
-                {% endif %}
-                {% if post.title == "Building an additional classroom for Ipala’s diversificado (high school…kinda)" %}
-                <a href="{{ post.url }}"><button type="button" id="fp_button"
-                    class="btn btn-warning video-btn rounded-pill my-2">
-                    Classroom Space
-                  </button>
-                </a>
-                {% endif %}
-                {% if post.title == "Food relief moves beyond Covid-19 model" %}
-                <a href="{{ post.url }}"><button type="button" id="fp_button"
-                    class="btn btn-primary video-btn rounded-pill mx-2 my-2 text-dark">
-                    Food Assistance
-                  </button>
-                </a>
-                {% endif %}
-                {% if post.title == "Securing flood prone community - Nueva Reforma" %}
-                <a href="{{ post.url }}"><button type="button" id="fp_button"
-                    class="btn btn-warning video-btn rounded-pill mx-2 my-2">
-                    Dry, Healthy Housing
-                  </button>
-                </a>
-                {% endif %}
-                {% if post.title == "Full Rollout of Our Post-secondary School Scholarship Program" %}
-                <a href="{{ post.url }}"><button type="button" id="fp_button"
-                    class="btn btn-danger video-btn rounded-pill my-2 text-dark">
-                    Scholarships
-                  </button>
-                </a>
-                {% endif %}
-                {% endfor %}
-              </div>
-            </div>
+        {% assign slide_count = 1 %}
+        {% capture slides %}
+        <div class="carousel-item" data-interval="9000">
+          <img src="/images/school_desk_updates_00.png" class="d-block w-100" alt="Rehabilitating student desks">
+          <div class="carousel-caption">
+            <p>Rehabilitating student desks for schools in Ipala.</p>
           </div>
         </div>
+        {% for post in site.posts %}
+        {% assign slide_image = nil %}{% assign slide_label = nil %}{% assign slide_caption = nil %}
+        {% case post.title %}
+        {% when "Securing flood prone community - Nueva Reforma" %}{% assign slide_image = "/images/slide_01.png" %}{%
+        assign slide_label = "Flood control in Nueva Reforma" %}{% assign slide_caption = "We have funded materials for
+        four houses to provide basic housing to displaced families." %}
+        {% when "Solar-powered electricity is turning on the lights in rural Ipala" %}{% assign slide_image =
+        "/images/electricity_update_00.png" %}{% assign slide_label = "Solar power in rural Ipala" %}{% assign
+        slide_caption = "Installing solar-powered electricity in rural Ipala homes." %}
+        {% when "Wheelchairs for the disabled AND their families too!" %}{% assign slide_image = "/images/slide_04.png"
+        %}{% assign slide_label = "Wheelchair project" %}{% assign slide_caption = "Supporting ambulatory aids and
+        working with clinics to help people access medical care." %}
+        {% when "Building an additional classroom for Ipala’s diversificado (high school…kinda)" %}{% assign slide_image
+        = "/images/sizing_update_00.png" %}{% assign slide_label = "Classroom construction project" %}{% assign
+        slide_caption = "Our partners and AEHCA completed two classrooms at IDEC." %}
+        {% when "Food relief moves beyond Covid-19 model" %}{% assign slide_image = "/images/food_carousel_00.png" %}{%
+        assign slide_label = "Food assistance project" %}{% assign slide_caption = "Providing food assistance in
+        response to community needs." %}
+        {% when "Full Rollout of Our Post-secondary School Scholarship Program" %}{% assign slide_image =
+        "/images/scholarship_project.jpeg" %}{% assign slide_label = "Scholarship program" %}{% assign slide_caption =
+        "Supporting students through our post-secondary scholarship program." %}
+        {% endcase %}
+        {% if slide_image %}
+        {% assign slide_count = slide_count | plus: 1 %}
+        <div class="carousel-item" data-interval="9000">
+          <a href="{{ post.url | relative_url }}"><img src="{{ slide_image | relative_url }}" class="d-block w-100"
+              alt="{{ slide_label }}">
+            <div class="carousel-caption">
+              <p>{{ slide_caption }}</p>
+            </div>
+          </a>
+        </div>
+        {% endif %}
+        {% endfor %}
+        {% endcapture %}
+        <div id="frontPageCarousel" class="carousel slide" data-aehca-carousel aria-label="AEHCA projects">
+          <ol class="carousel-indicators">
+            <li><button type="button" class="active" data-slide-to="0" aria-label="Show introduction"
+                aria-current="true"></button></li>
+            {% for i in (1..slide_count) %}<li><button type="button" data-slide-to="{{ i }}"
+                aria-label="Show project {{ i }}"></button></li>{% endfor %}
+          </ol>
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active" data-interval="9000">
+              <img src="/images/slide_00.png" class="d-block w-100" alt="Providing basic housing to displaced families">
+              <div class="carousel-caption">
+                <p>Your contributions have helped build the foundation of healthy living and education in Guatemala.</p>
+              </div>
+            </div>
+            {{ slides }}
+          </div>
+          <button class="carousel-control-prev" type="button" data-slide="prev"><span class="carousel-control-prev-icon"
+              aria-hidden="true"></span><span class="sr-only">Previous slide</span></button>
+          <button class="carousel-control-next" type="button" data-slide="next"><span class="carousel-control-next-icon"
+              aria-hidden="true"></span><span class="sr-only">Next slide</span></button>
+        </div>
+
+        <div class="front-projects rounded mt-3">
+          <div class="front-project-buttons">
+            {% for post in site.posts %}
+            {% assign button_label = nil %}{% assign button_color = nil %}
+            {% case post.title %}
+            {% when "Solar-powered electricity is turning on the lights in rural Ipala" %}{% assign button_label =
+            "Solar" %}{% assign button_color = "primary" %}
+            {% when "Wheelchairs for the disabled AND their families too!" %}{% assign button_label = "Health Supports"
+            %}{% assign button_color = "warning" %}
+            {% when "Building an additional classroom for Ipala’s diversificado (high school…kinda)" %}{% assign
+            button_label = "School Supports" %}{% assign button_color = "danger" %}
+            {% when "Food relief moves beyond Covid-19 model" %}{% assign button_label = "Food Assistance" %}{% assign
+            button_color = "primary" %}
+            {% when "Securing flood prone community - Nueva Reforma" %}{% assign button_label = "Dry, Healthy Housing"
+            %}{% assign button_color = "warning" %}
+            {% when "Full Rollout of Our Post-secondary School Scholarship Program" %}{% assign button_label =
+            "Scholarships" %}{% assign button_color = "primary" %}
+            {% endcase %}
+            {% if button_label %}<a class="btn btn-{{ button_color }} front-button"
+              href="{{ post.url | relative_url }}">{{ button_label }}</a>{% endif %}
+            {% endfor %}
+          </div>
+        </div>
+
+        <section class="front-impact text-center" aria-labelledby="impact-title">
+          <h2 id="impact-title">Impact in Ipala</h2>
+          <p>See what our community partners and supporters accomplished in 2026, and our continued commitment for 2027.
+          </p>
+          <a href="/images/2026_Impact_Highlights_Healthcare_and_Education.png"><img
+              src="/images/2026_Impact_Highlights_Healthcare_and_Education.png"
+              alt="Impact in Ipala: 2026 accomplishments and plans for 2027. A text summary follows." loading="lazy"
+              width="1024" height="1535"></a>
+          <details class="text-left">
+            <summary>Read the infographic as text</summary>
+            <p>In 2026, AEHCA and its partners reported the following work in Ipala:</p>
+            <ul>
+              <li>190 senior adults and people with disabilities received basic food needs.</li>
+              <li>15 post-secondary students received scholarships.</li>
+              <li>20 patients received needed medications or tests.</li>
+              <li>8 families’ homes were stabilized with new walls or foundations.</li>
+              <li>300 children across 12 schools received newly refurbished desks.</li>
+              <li>26 students gained access to a school library for the first time.</li>
+              <li>30 families received electricity through solar panel installations.</li>
+            </ul>
+            <p>Plans for 2027 include expanding support for medications and tests, homes and desks; creating two new
+              libraries; and helping Ipala work toward electricity for every home.</p>
+          </details>
+        </section>
       </div>
       <hr class="my-4">
-      <div class="container">
-        <div class="col text-center">
-          <a id="fp_button" class="btn-xl btn-danger rounded-pill" href="/give" role="button">Give</a>
-          <p><br>
-            By giving, you are contributing to the education and creating healthy living conditions in Central America
-            communities.
-          </p>
-        </div>
+      <div class="text-center front-give"><a class="btn btn-danger front-button front-give-button"
+          href="/give.html">Give</a>
+        <p>By giving, you contribute to education and healthy living conditions in Central American communities.</p>
       </div>
-      <!--<hr class="my-4">
-      <div class="card-group">
-        <div class="card text-center">
-          {% for post in site.posts %}
-          {% if post.title == "2020 Response to Covid-19 in Central America" %}
-          <a href="{{ post.url }}">
-            {% endif %}
-            {% endfor %}
-            <div class="card-body">
-              <h5 class="card-title">COVID-19 Response</h5>
-              <p class="card-text"></p>
-            </div>
-            <img src="/images/covid19-resp.jpg" class="card-img-top" alt="ipala covid response image">
-        </div></a>
-        <div class="card text-center">
-          {% for post in site.posts %}
-          {% if post.title == "Education in Ipala, Guatemala" %}
-          <a href="{{ post.url }}">
-            {% endif %}
-            {% endfor %}
-            <div class="card-body">
-              <h5 class="card-title">Education</h5>
-              <p class="card-text"></p>
-            </div>
-            <img src="/images/education.jpg" class="card-img-top" alt="ipala education image">
-        </div></a>
-        <div class="card text-center">
-          {% for post in site.posts %}
-          {% if post.title == "Health in Ipala, Guatemala" %}
-          <a href="{{ post.url }}">
-            {% endif %}
-            {% endfor %}
-            <div class="card-body">
-              <h5 class="card-title">Health</h5>
-              <p class="card-text"></p>
-            </div>
-            <img src="/images/health.jpg" class="card-img-top" alt="ipala health image">
-        </div></a>
-      </div>-->
     </div>
   </div>
 </main>
+
+<script src="/js/front-carousel.js" defer></script>
