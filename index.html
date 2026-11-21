@@ -1,7 +1,8 @@
 ---
 title: Home
 layout: default
-description: "AEHCA Inc. works with communities to advance education and healthy living conditions throughout Central America."
+description: "AEHCA Inc. works with communities to advance education and healthy living conditions throughout Central
+America."
 ---
 <main role="main" class="front-page">
   <div class="container-md">
@@ -10,83 +11,133 @@ description: "AEHCA Inc. works with communities to advance education and healthy
       <hr class="my-4">
       <div class="container">
         <div class="alert alert-primary text-center" role="alert">
-          <a href="/pdfs/AEHCA_report_mid_2026.pdf" class="alert-link" target="_blank" rel="noopener noreferrer">Click here to learn more about what we've been up to in 2026.</a>
+          <a href="/pdfs/AEHCA_report_mid_2026.pdf" class="alert-link" target="_blank" rel="noopener noreferrer">Click
+            here to learn more about what we've been up to in 2026.</a>
         </div>
         <div class="alert alert-warning front-announcement">
-          At AEHCA we believe each of us has a little light to share out into the world. Review our programs, get updated on what's happened recently and some plans for the future.
+          At AEHCA we believe each of us has a little light to share out into the world. Review our programs, get
+          updated on what's happened recently and some plans for the future.
         </div>
 
         {% assign slide_count = 1 %}
         {% capture slides %}
         <div class="carousel-item" data-interval="9000">
           <img src="/images/school_desk_updates_00.png" class="d-block w-100" alt="Rehabilitating student desks">
-          <div class="carousel-caption"><p>Rehabilitating student desks for schools in Ipala.</p></div>
+          <div class="carousel-caption">
+            <p>Rehabilitating student desks for schools in Ipala.</p>
+          </div>
         </div>
         {% for post in site.posts %}
-          {% assign slide_image = nil %}{% assign slide_label = nil %}{% assign slide_caption = nil %}
-          {% case post.title %}
-          {% when "Securing flood prone community - Nueva Reforma" %}{% assign slide_image = "/images/slide_01.png" %}{% assign slide_label = "Flood control in Nueva Reforma" %}{% assign slide_caption = "We have funded materials for four houses to provide basic housing to displaced families." %}
-          {% when "Solar-powered electricity is turning on the lights in rural Ipala" %}{% assign slide_image = "/images/electricity_update_00.png" %}{% assign slide_label = "Solar power in rural Ipala" %}{% assign slide_caption = "Installing solar-powered electricity in rural Ipala homes." %}
-          {% when "Wheelchairs for the disabled AND their families too!" %}{% assign slide_image = "/images/slide_04.png" %}{% assign slide_label = "Wheelchair project" %}{% assign slide_caption = "Supporting ambulatory aids and working with clinics to help people access medical care." %}
-          {% when "Building an additional classroom for Ipala’s diversificado (high school…kinda)" %}{% assign slide_image = "/images/sizing_update_00.png" %}{% assign slide_label = "Classroom construction project" %}{% assign slide_caption = "Our partners and AEHCA completed two classrooms at IDEC." %}
-          {% when "Food relief moves beyond Covid-19 model" %}{% assign slide_image = "/images/food_carousel_00.png" %}{% assign slide_label = "Food assistance project" %}{% assign slide_caption = "Providing food assistance in response to community needs." %}
-          {% when "Full Rollout of Our Post-secondary School Scholarship Program" %}{% assign slide_image = "/images/scholarship_project.jpeg" %}{% assign slide_label = "Scholarship program" %}{% assign slide_caption = "Supporting students through our post-secondary scholarship program." %}
-          {% endcase %}
-          {% if slide_image %}
-          {% assign slide_count = slide_count | plus: 1 %}
-          <div class="carousel-item" data-interval="9000">
-            <a href="{{ post.url | relative_url }}"><img src="{{ slide_image | relative_url }}" class="d-block w-100" alt="{{ slide_label }}"><div class="carousel-caption"><p>{{ slide_caption }}</p></div></a>
-          </div>
-          {% endif %}
+        {% assign slide_image = nil %}{% assign slide_label = nil %}{% assign slide_caption = nil %}
+        {% case post.title %}
+        {% when "Securing flood prone community - Nueva Reforma" %}{% assign slide_image = "/images/slide_01.png" %}{%
+        assign slide_label = "Flood control in Nueva Reforma" %}{% assign slide_caption = "We have funded materials for
+        four houses to provide basic housing to displaced families." %}
+        {% when "Solar-powered electricity is turning on the lights in rural Ipala" %}{% assign slide_image =
+        "/images/electricity_update_00.png" %}{% assign slide_label = "Solar power in rural Ipala" %}{% assign
+        slide_caption = "Installing solar-powered electricity in rural Ipala homes." %}
+        {% when "Wheelchairs for the disabled AND their families too!" %}{% assign slide_image = "/images/slide_04.png"
+        %}{% assign slide_label = "Wheelchair project" %}{% assign slide_caption = "Supporting ambulatory aids and
+        working with clinics to help people access medical care." %}
+        {% when "Building an additional classroom for Ipala’s diversificado (high school…kinda)" %}{% assign slide_image
+        = "/images/sizing_update_00.png" %}{% assign slide_label = "Classroom construction project" %}{% assign
+        slide_caption = "Our partners and AEHCA completed two classrooms at IDEC." %}
+        {% when "Food relief moves beyond Covid-19 model" %}{% assign slide_image = "/images/food_carousel_00.png" %}{%
+        assign slide_label = "Food assistance project" %}{% assign slide_caption = "Providing food assistance in
+        response to community needs." %}
+        {% when "Full Rollout of Our Post-secondary School Scholarship Program" %}{% assign slide_image =
+        "/images/scholarship_project.jpeg" %}{% assign slide_label = "Scholarship program" %}{% assign slide_caption =
+        "Supporting students through our post-secondary scholarship program." %}
+        {% endcase %}
+        {% if slide_image %}
+        {% assign slide_count = slide_count | plus: 1 %}
+        <div class="carousel-item" data-interval="9000">
+          <a href="{{ post.url | relative_url }}"><img src="{{ slide_image | relative_url }}" class="d-block w-100"
+              alt="{{ slide_label }}">
+            <div class="carousel-caption">
+              <p>{{ slide_caption }}</p>
+            </div>
+          </a>
+        </div>
+        {% endif %}
         {% endfor %}
         {% endcapture %}
         <div id="frontPageCarousel" class="carousel slide" data-aehca-carousel aria-label="AEHCA projects">
           <ol class="carousel-indicators">
-            <li><button type="button" class="active" data-slide-to="0" aria-label="Show introduction" aria-current="true"></button></li>
-            {% for i in (1..slide_count) %}<li><button type="button" data-slide-to="{{ i }}" aria-label="Show project {{ i }}"></button></li>{% endfor %}
+            <li><button type="button" class="active" data-slide-to="0" aria-label="Show introduction"
+                aria-current="true"></button></li>
+            {% for i in (1..slide_count) %}<li><button type="button" data-slide-to="{{ i }}"
+                aria-label="Show project {{ i }}"></button></li>{% endfor %}
           </ol>
           <div class="carousel-inner rounded">
             <div class="carousel-item active" data-interval="9000">
               <img src="/images/slide_00.png" class="d-block w-100" alt="Providing basic housing to displaced families">
-              <div class="carousel-caption"><p>Your contributions have helped build the foundation of healthy living and education in Guatemala.</p></div>
+              <div class="carousel-caption">
+                <p>Your contributions have helped build the foundation of healthy living and education in Guatemala.</p>
+              </div>
             </div>
             {{ slides }}
           </div>
-          <button class="carousel-control-prev" type="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous slide</span></button>
-          <button class="carousel-control-next" type="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next slide</span></button>
+          <button class="carousel-control-prev" type="button" data-slide="prev"><span class="carousel-control-prev-icon"
+              aria-hidden="true"></span><span class="sr-only">Previous slide</span></button>
+          <button class="carousel-control-next" type="button" data-slide="next"><span class="carousel-control-next-icon"
+              aria-hidden="true"></span><span class="sr-only">Next slide</span></button>
         </div>
 
         <div class="front-projects rounded mt-3">
           <div class="front-project-buttons">
             {% for post in site.posts %}
-              {% assign button_label = nil %}{% assign button_color = nil %}
-              {% case post.title %}
-              {% when "Solar-powered electricity is turning on the lights in rural Ipala" %}{% assign button_label = "Solar" %}{% assign button_color = "primary" %}
-              {% when "Wheelchairs for the disabled AND their families too!" %}{% assign button_label = "Health Supports" %}{% assign button_color = "warning" %}
-              {% when "Building an additional classroom for Ipala’s diversificado (high school…kinda)" %}{% assign button_label = "Classroom Space" %}{% assign button_color = "danger" %}
-              {% when "Food relief moves beyond Covid-19 model" %}{% assign button_label = "Food Assistance" %}{% assign button_color = "primary" %}
-              {% when "Securing flood prone community - Nueva Reforma" %}{% assign button_label = "Dry, Healthy Housing" %}{% assign button_color = "warning" %}
-              {% when "Full Rollout of Our Post-secondary School Scholarship Program" %}{% assign button_label = "Scholarships" %}{% assign button_color = "primary" %}
-              {% endcase %}
-              {% if button_label %}<a class="btn btn-{{ button_color }} front-button" href="{{ post.url | relative_url }}">{{ button_label }}</a>{% endif %}
+            {% assign button_label = nil %}{% assign button_color = nil %}
+            {% case post.title %}
+            {% when "Solar-powered electricity is turning on the lights in rural Ipala" %}{% assign button_label =
+            "Solar" %}{% assign button_color = "primary" %}
+            {% when "Wheelchairs for the disabled AND their families too!" %}{% assign button_label = "Health Supports"
+            %}{% assign button_color = "warning" %}
+            {% when "Building an additional classroom for Ipala’s diversificado (high school…kinda)" %}{% assign
+            button_label = "School Supports" %}{% assign button_color = "danger" %}
+            {% when "Food relief moves beyond Covid-19 model" %}{% assign button_label = "Food Assistance" %}{% assign
+            button_color = "primary" %}
+            {% when "Securing flood prone community - Nueva Reforma" %}{% assign button_label = "Dry, Healthy Housing"
+            %}{% assign button_color = "warning" %}
+            {% when "Full Rollout of Our Post-secondary School Scholarship Program" %}{% assign button_label =
+            "Scholarships" %}{% assign button_color = "primary" %}
+            {% endcase %}
+            {% if button_label %}<a class="btn btn-{{ button_color }} front-button"
+              href="{{ post.url | relative_url }}">{{ button_label }}</a>{% endif %}
             {% endfor %}
           </div>
         </div>
 
         <section class="front-impact text-center" aria-labelledby="impact-title">
           <h2 id="impact-title">Impact in Ipala</h2>
-          <p>See what our community partners and supporters accomplished in 2026, and our continued commitment for 2027.</p>
-          <a href="/images/2026_Impact_Highlights_Healthcare_and_Education.png"><img src="/images/2026_Impact_Highlights_Healthcare_and_Education.png" alt="Impact in Ipala: 2026 accomplishments and plans for 2027. A text summary follows." loading="lazy" width="1024" height="1535"></a>
-          <p class="mt-2"><a href="/images/2026_Impact_Highlights_Healthcare_and_Education.png">View the full-size infographic</a></p>
-          <details class="text-left"><summary>Read the infographic as text</summary>
+          <p>See what our community partners and supporters accomplished in 2026, and our continued commitment for 2027.
+          </p>
+          <a href="/images/2026_Impact_Highlights_Healthcare_and_Education.png"><img
+              src="/images/2026_Impact_Highlights_Healthcare_and_Education.png"
+              alt="Impact in Ipala: 2026 accomplishments and plans for 2027. A text summary follows." loading="lazy"
+              width="1024" height="1535"></a>
+          <details class="text-left">
+            <summary>Read the infographic as text</summary>
             <p>In 2026, AEHCA and its partners reported the following work in Ipala:</p>
-            <ul><li>190 senior adults and people with disabilities received basic food needs.</li><li>15 post-secondary students received scholarships.</li><li>20 patients received needed medications or tests.</li><li>8 families’ homes were stabilized with new walls or foundations.</li><li>300 children across 12 schools received newly refurbished desks.</li><li>26 students gained access to a school library for the first time.</li><li>30 families received electricity through solar panel installations.</li></ul>
-            <p>Plans for 2027 include expanding support for medications and tests, homes and desks; creating two new libraries; and helping Ipala work toward electricity for every home.</p>
+            <ul>
+              <li>190 senior adults and people with disabilities received basic food needs.</li>
+              <li>15 post-secondary students received scholarships.</li>
+              <li>20 patients received needed medications or tests.</li>
+              <li>8 families’ homes were stabilized with new walls or foundations.</li>
+              <li>300 children across 12 schools received newly refurbished desks.</li>
+              <li>26 students gained access to a school library for the first time.</li>
+              <li>30 families received electricity through solar panel installations.</li>
+            </ul>
+            <p>Plans for 2027 include expanding support for medications and tests, homes and desks; creating two new
+              libraries; and helping Ipala work toward electricity for every home.</p>
           </details>
         </section>
       </div>
       <hr class="my-4">
-      <div class="text-center front-give"><a class="btn btn-danger front-button front-give-button" href="/give.html">Give</a><p>By giving, you contribute to education and healthy living conditions in Central American communities.</p></div>
+      <div class="text-center front-give"><a class="btn btn-danger front-button front-give-button"
+          href="/give.html">Give</a>
+        <p>By giving, you contribute to education and healthy living conditions in Central American communities.</p>
+      </div>
     </div>
   </div>
 </main>
